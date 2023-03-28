@@ -33,7 +33,7 @@ _Nice-to-Have (Maybe someday)_
           - Stickers or badges that are earned for completing challenges or reaching certain milestones
           - Animated characters or avatars that can be customized as the child progresses through the app
           - Rewards with real-world value for completing challenges and reaching new levels (coupons or discounts for online stores)
-          - Access to premium features within the app (personalized coaching or support from a mental health professional)
+          - Access to premium features within the app (personalized coaching or support from a mental health professional)_
 
 
 
