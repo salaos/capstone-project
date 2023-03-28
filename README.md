@@ -17,25 +17,25 @@ The Application includes creating own challenges and tracking tools that allow u
 
 __Key features of the social anxiety app include:__
 
-- [ ] A series of challenges designed to help users practice social skills and build confidence
-- [ ] Every Day a new challenge to get out of the comfort zone
-- [ ] A supportive, non-judgmental environment to help users overcome social anxiety
-- [ ] A fun and engaging way to build confidence and improve social skills.
+- A series of challenges designed to help users practice social skills and build confidence
+- Every Day a new challenge to get out of the comfort zone
+- A supportive, non-judgmental environment to help users overcome social anxiety
+- A fun and engaging way to build confidence and improve social skills.
 
 
 
 _Nice-to-Have (Maybe someday)_
 
-- [ ] Goal-setting and tracking tools to monitor progress on a personal Milestone-Board
-- [ ] Providing a platform for a pseudonomised community to share experiences
-- [ ] A reward system that is appropriate for the user's age, like...
+- Goal-setting and tracking tools to monitor progress on a personal Milestone-Board
+- Providing a platform for a pseudonomised community to share experiences
+- A reward system that is appropriate for the user's age, like...
            _A leaderboard that allows users to compete with others and track their progress over time
           - Stickers or badges that are earned for completing challenges or reaching certain milestones
           - Animated characters or avatars that can be customized as the child progresses through the app
           - Rewards with real-world value for completing challenges and reaching new levels (coupons or discounts for online stores)
           - Access to premium features within the app (personalized coaching or support from a mental health professional)_
 
-
+---
 
 ## USER STORIES
 
@@ -55,8 +55,9 @@ Sprint #3 ->> Sprint #4: ...
 Sprint #4 ->> Final: ...
 ```
 
+---
 
-##PROJECT
+## PROJECT
 
 __CONCEPT__
  - [ ] Brainstorming
@@ -99,6 +100,7 @@ __PRESENTATION PREP__
 - [ ] Logo?
 - [ ] final readme with project description
 
+---
 
 ## MORE
 
