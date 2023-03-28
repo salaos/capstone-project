@@ -61,13 +61,13 @@ Sprint #4 ->> Final: ...
 
 __CONCEPT__
  - [ ] Brainstorming
- - [ ] Choose idea
- - [ ] fine conception
- - [ ] set up kanban board
+ - [ ] Choose Idea
+ - [ ] Fine Conception
+ - [ ] Kanban Board
 
 __DESIGN__
  - [ ] Inspiration UI
- - [ ] structure sketch
+ - [ ] Structure Sketch
  - [ ] Wireframes 
  - [ ] Prototype
  - [ ] UX Feedback
@@ -75,30 +75,31 @@ __DESIGN__
 __CODE__
 
 _SPRINT #1_
- - [ ] Code User Stories 1-3
- - [ ] Deploy on Vercel
- - [ ] Create project & plan structure & comment
- - [ ] define global CSS
+ - [ ] Code User Stories 1-3: My-Challenges
+ - [ ] Deployment (Vercel)
+ - [ ] Create Project Structure
+ - [ ] Global CSS
                
 _SPRINT #2_
- - [ ] Code User Stories 4-6
+ - [ ] Code User Stories 4-6: Well-Done, Challenge-of-the-Day, Navigation
+ - [ ] 
              
 _SPRINT #3_
- - [ ] Code User Stories 7-9
+ - [ ] Code User Stories 7-9:
        
 _SPRINT #4_
- - [ ] Code User Stories 9-12
- - [ ] UX Precision work
- - [ ] images, icons, fonts - final linking and filing
- - [ ] Nice-to-Have: Which features next?
- - [ ] CSS Animations & Feedback fine tuning
+ - [ ] Code User Stories 9-12: Final Fine Tuning
+ - [ ] UX Precision Work
+ - [ ] Images, Icons, Fonts - linking and filing
+ - [ ] CSS Animations & Feedback
+ - [ ] Logo & Branding
        
       
 __PRESENTATION PREP__
 - [ ] Screenvideo / gif
-- [ ]  - [ ] Text & Bullets
-- [ ] Logo?
-- [ ] final readme with project description
+- [ ] Description & Bullets
+- [ ] Final readme with project description
+- [ ] Nice-to-Have (Someday): Which features next?
 
 ---
 
