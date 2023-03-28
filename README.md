@@ -11,19 +11,29 @@
 
 ## CAPSTONE PROJECT
 
-Overcome social anxiety and build your confidence with our app! Designed for people who struggle with social situations, our app offers a series of challenges to help you face your fears and develop new skills.
+The social anxiety Web-Application is designed to help individuals overcome their social anxiety by offering a series of challenges that enable them to face their fears and develop new skills. Users can start with simple challenges and progress to more difficult tasks, all of which are intended to help them practice social skills and build confidence in a supportive, non-judgmental environment.
 
-Start with simple challenges like making small talk with a stranger or asking for directions, and work your way up to more difficult tasks like giving a presentation or attending a networking event. Each challenge is designed to help you practice social skills and build confidence in a supportive, non-judgmental environment.
+The Application includes creating own challenges and tracking tools that allow users to monitor their progress and earn rewards for completing challenges and reaching new levels. Additionally, the app provides a way for users to improve their social skills and conquer their fears in a fun and engaging manner.
 
-Track your progress with our goal-setting and tracking tools, and earn rewards for completing challenges and reaching new levels. With our app, you can build your social skills, conquer your fears, and start living a more confident and fulfilling life.
+__Key features of the social anxiety app include:__
 
-Key features:
+- [ ] A series of challenges designed to help users practice social skills and build confidence
+- [ ] Every Day a new challenge to get out of the comfort zone
+- [ ] A supportive, non-judgmental environment to help users overcome social anxiety
+- [ ] A fun and engaging way to build confidence and improve social skills.
 
-A series of challenges designed to help you practice social skills and build confidence
-Goal-setting and tracking tools to monitor your progress
-Rewards for completing challenges and reaching new levels
-A supportive, non-judgmental environment to help you overcome social anxiety
-A fun and engaging way to build your confidence and improve your social skills
+
+
+_Nice-to-Have (Maybe someday)_
+
+- [ ] Goal-setting and tracking tools to monitor progress on a personal Milestone-Board
+- [ ] Providing a platform for a pseudonomised community to share experiences
+- [ ] A reward system that is appropriate for the user's age
+     - [ ] A leaderboard that allows users to compete with others and track their progress over time
+     - [ ] Stickers or badges that are earned for completing challenges or reaching certain milestones
+     - [ ] Animated characters or avatars that can be customized as the child progresses through the app
+     - [ ] Rewards with real-world value for completing challenges and reaching new levels (coupons or discounts for online stores)
+     - [ ] Access to premium features within the app (personalized coaching or support from a mental health professional)
 
 
 
