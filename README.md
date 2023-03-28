@@ -1,9 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-
-## [WWW.SOCIALLYAWESOME.COM](https://capstone-project-git-list-of-challenges-salaos.vercel.app/challenges).
+## DEPLOYMENT:
+## [WWW.SOCIALLYAWESOME.COM](https://capstone-project-git-list-of-challenges-salaos.vercel.app/challenges)
 
 
 ```mermaid
@@ -20,5 +17,12 @@ Sprint #3 ->> Sprint #4: ...
 
 Sprint #4 ->> Final: ...
 ```
+
+
+---
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 
