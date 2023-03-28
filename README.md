@@ -10,50 +10,47 @@
 
 
 ## CAPSTONE PROEJCT
-- CONCEPT
+
+__CONCEPT
  - [ ] Brainstorming
-        - [ ] Choose idea
-        - [ ] fine conception
-        - [ ] set up kanban board
+ - [ ] Choose idea
+ - [ ] fine conception
+ - [ ] set up kanban board
 
-    - DESIGN
-        - [ ] Inspiration UI
-        - [ ] structure sketch
-        - [ ] Wireframes 
-        - [ ] Prototype
-        - [ ] UX Feedback
+__DESIGN
+ - [ ] Inspiration UI
+ - [ ] structure sketch
+ - [ ] Wireframes 
+ - [ ] Prototype
+ - [ ] UX Feedback
 
-    - CODE
+__CODE
 
-       SPRINT #1
-        - [ ] Code User Stories 1-3
-        - [ ] Deploy on Vercel
-        - [ ] Create project & plan structure & comment
-        - [ ] define global CSS
-        
+_SPRINT #1
+ - [ ] Code User Stories 1-3
+ - [ ] Deploy on Vercel
+ - [ ] Create project & plan structure & comment
+ - [ ] define global CSS
+               
+_SPRINT #2
+ - [ ] Code User Stories 4-6
+             
+_SPRINT #3
+ - [ ] Code User Stories 7-9
        
-       SPRINT #2
-       - [ ] Code User Stories 4-6
-       
-       
-       SPRINT #3
-       - [ ] Code User Stories 7-9
-       
-       
-       SPRINT #4
-       - [ ] Code User Stories 9-12
-       - [ ] UX Precision work
-       - [ ] images, icons, fonts - final linking and filing
-       - [ ] Nice-to-Have: Which features next?
-       - [ ] CSS Animations & Feedback fine tuning
+_SPRINT #4
+ - [ ] Code User Stories 9-12
+ - [ ] UX Precision work
+ - [ ] images, icons, fonts - final linking and filing
+ - [ ] Nice-to-Have: Which features next?
+ - [ ] CSS Animations & Feedback fine tuning
        
       
-    - PRESENTATION PREP
-       - [ ] Screenvideo / gif
-       - [ ] Text & Bullets
-       - [ ] final name
-       - [ ] Logo?
-       - [ ] final readme with project description
+__PRESENTATION PREP
+- [ ] Screenvideo / gif
+- [ ]  - [ ] Text & Bullets
+- [ ] Logo?
+ - [ ] final readme with project description
 
 
 ## USER STORIES
