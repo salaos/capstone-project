@@ -1,3 +1,5 @@
+// used to add custom document to the Next.js application.
+
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
