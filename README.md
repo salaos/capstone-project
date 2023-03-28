@@ -10,8 +10,8 @@
 
 
 ## CAPSTONE PROEJCT
-    - CONCEPT
-        - [ ] Brainstorming
+- CONCEPT
+ - [ ] Brainstorming
         - [ ] Choose idea
         - [ ] fine conception
         - [ ] set up kanban board
