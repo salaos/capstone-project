@@ -2,6 +2,12 @@
 ## [WWW.SOCIALLYAWESOME.COM](https://capstone-project-git-list-of-challenges-salaos.vercel.app/challenges) (WORKING TITLE)
 
 
+
+![giphy (1)](https://user-images.githubusercontent.com/123561210/228354407-79bec219-e50c-4922-b9a6-bdaa7d0d2ed5.gif)
+
+
+
+
 ```mermaid
 sequenceDiagram
 Sprint #1 ->> Sprint #2: List of Challenges
