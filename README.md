@@ -2,13 +2,16 @@
 ## [WWW.SOCIALLYAWESOME.COM](https://capstone-project-git-list-of-challenges-salaos.vercel.app/challenges) (WORKING TITLE)
 
 
+---
+
+
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 
 
-
+---
 
 ```mermaid
 sequenceDiagram
