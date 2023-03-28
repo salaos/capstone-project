@@ -19,10 +19,8 @@ __Key features of the social anxiety app include:__
 
 - A series of challenges designed to help users practice social skills and build confidence
 - Every Day a new challenge to get out of the comfort zone
-
 - Tips for managing symptoms of anxiety (grounding techniques, visualization exercises, deep breathing exercises, mindfulness meditation)
 - Information for professional help (list of local mental health resources, different types of therapy)
-
 - A supportive, non-judgmental environment to help users overcome social anxiety
 - A fun and engaging way to build confidence and improve social skills.
 
@@ -86,22 +84,24 @@ _SPRINT #1_
 _SPRINT #2_
  - [ ] Code User Stories 4-6: Well-Done, Challenge-of-the-Day, Navigation
              
+             
 _SPRINT #3_
- - [ ] Code User Stories 7-9: 
+ - [ ] Code User Stories 7-9: Info-Page, MongoDB?
+ - [ ] info-page (Stress techniques & exercise, mental health info)
        
 _SPRINT #4_
- - [ ] Code User Stories 9-12: Final Fine Tuning
+ - [ ] Code User Stories 9-12: Final Fine Tuning & Illus
  - [ ] UX Precision Work
- - [ ] Images, Icons, Fonts - linking and filing
+ - [ ] Images, Icons, Fonts, Logo - linking and filing
+ - [ ] Illustrations (cute monsters?)
  - [ ] CSS Animations & Feedback
- - [ ] Logo & Branding
        
       
 __PRESENTATION PREP__
 - [ ] Screenvideo / gif
 - [ ] Description & Bullets
 - [ ] Final readme with project description
-- [ ] Nice-to-Have (Someday): Which features next?
+- [ ] Nice-to-Have (Someday): Which features next? -> User Login & Leaderboard
 
 ---
 
