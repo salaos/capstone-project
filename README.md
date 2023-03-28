@@ -29,7 +29,7 @@ _Nice-to-Have (Maybe someday)_
 - [ ] Goal-setting and tracking tools to monitor progress on a personal Milestone-Board
 - [ ] Providing a platform for a pseudonomised community to share experiences
 - [ ] A reward system that is appropriate for the user's age, like...
-          - A leaderboard that allows users to compete with others and track their progress over time
+           _A leaderboard that allows users to compete with others and track their progress over time
           - Stickers or badges that are earned for completing challenges or reaching certain milestones
           - Animated characters or avatars that can be customized as the child progresses through the app
           - Rewards with real-world value for completing challenges and reaching new levels (coupons or discounts for online stores)
