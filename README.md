@@ -41,28 +41,28 @@ __CONCEPT__
  - [ ] fine conception
  - [ ] set up kanban board
 
-__DESIGN
+__DESIGN__
  - [ ] Inspiration UI
  - [ ] structure sketch
  - [ ] Wireframes 
  - [ ] Prototype
  - [ ] UX Feedback
 
-__CODE
+__CODE__
 
-_SPRINT #1
+_SPRINT #1_
  - [ ] Code User Stories 1-3
  - [ ] Deploy on Vercel
  - [ ] Create project & plan structure & comment
  - [ ] define global CSS
                
-_SPRINT #2
+_SPRINT #2_
  - [ ] Code User Stories 4-6
              
-_SPRINT #3
+_SPRINT #3_
  - [ ] Code User Stories 7-9
        
-_SPRINT #4
+_SPRINT #4_
  - [ ] Code User Stories 9-12
  - [ ] UX Precision work
  - [ ] images, icons, fonts - final linking and filing
@@ -70,11 +70,11 @@ _SPRINT #4
  - [ ] CSS Animations & Feedback fine tuning
        
       
-__PRESENTATION PREP
+__PRESENTATION PREP__
 - [ ] Screenvideo / gif
 - [ ]  - [ ] Text & Bullets
 - [ ] Logo?
- - [ ] final readme with project description
+- [ ] final readme with project description
 
 
 ## MORE
