@@ -9,8 +9,21 @@
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 
 
-## CAPSTONE PROEJCT
+## CAPSTONE PROJECT
 
+Overcome social anxiety and build your confidence with our app! Designed for people who struggle with social situations, our app offers a series of challenges to help you face your fears and develop new skills.
+
+Start with simple challenges like making small talk with a stranger or asking for directions, and work your way up to more difficult tasks like giving a presentation or attending a networking event. Each challenge is designed to help you practice social skills and build confidence in a supportive, non-judgmental environment.
+
+Track your progress with our goal-setting and tracking tools, and earn rewards for completing challenges and reaching new levels. With our app, you can build your social skills, conquer your fears, and start living a more confident and fulfilling life.
+
+Key features:
+
+A series of challenges designed to help you practice social skills and build confidence
+Goal-setting and tracking tools to monitor your progress
+Rewards for completing challenges and reaching new levels
+A supportive, non-judgmental environment to help you overcome social anxiety
+A fun and engaging way to build your confidence and improve your social skills
 
 
 
@@ -81,6 +94,6 @@ __PRESENTATION PREP__
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font. 
 
-© 2023 Nina Saalfrank
+© 2023 Nina Saalfrank. Template neuefische GmbH.
 
 
