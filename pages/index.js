@@ -1,11 +1,13 @@
 // home page of the app
 
-import Heading from "../components/Heading";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      <Heading>SOCIALLY AWESOME</Heading>
+      <Link href="/challenges">
+        <a>my challenges</a>
+      </Link>
     </main>
   );
 }
