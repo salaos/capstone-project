@@ -11,7 +11,31 @@
 
 ## CAPSTONE PROEJCT
 
-__CONCEPT
+
+
+
+## USER STORIES
+
+
+```mermaid
+sequenceDiagram
+Sprint #1 ->> Sprint #2: List of Challenges
+Sprint #1 ->> Sprint #2: Add new Challenges
+Sprint #1 ->> Sprint #2: Change existing Entries
+
+Sprint #2 ->> Sprint #3: ...
+
+
+Sprint #3 ->> Sprint #4: ...
+
+
+Sprint #4 ->> Final: ...
+```
+
+
+##PROJECT
+
+__CONCEPT__
  - [ ] Brainstorming
  - [ ] Choose idea
  - [ ] fine conception
@@ -51,25 +75,6 @@ __PRESENTATION PREP
 - [ ]  - [ ] Text & Bullets
 - [ ] Logo?
  - [ ] final readme with project description
-
-
-## USER STORIES
-
-
-```mermaid
-sequenceDiagram
-Sprint #1 ->> Sprint #2: List of Challenges
-Sprint #1 ->> Sprint #2: Add new Challenges
-Sprint #1 ->> Sprint #2: Change existing Entries
-
-Sprint #2 ->> Sprint #3: ...
-
-
-Sprint #3 ->> Sprint #4: ...
-
-
-Sprint #4 ->> Final: ...
-```
 
 
 ## MORE
