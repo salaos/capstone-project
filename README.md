@@ -3,14 +3,61 @@
 
 
 
-
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
 
 
----
+## CAPSTONE PROEJCT
+    - CONCEPT
+        - [ ] Brainstorming
+        - [ ] Choose idea
+        - [ ] fine conception
+        - [ ] set up kanban board
+
+    - DESIGN
+        - [ ] Inspiration UI
+        - [ ] structure sketch
+        - [ ] Wireframes 
+        - [ ] Prototype
+        - [ ] UX Feedback
+
+    - CODE
+
+       SPRINT #1
+        - [ ] Code User Stories 1-3
+        - [ ] Deploy on Vercel
+        - [ ] Create project & plan structure & comment
+        - [ ] define global CSS
+        
+       
+       SPRINT #2
+       - [ ] Code User Stories 4-6
+       
+       
+       SPRINT #3
+       - [ ] Code User Stories 7-9
+       
+       
+       SPRINT #4
+       - [ ] Code User Stories 9-12
+       - [ ] UX Precision work
+       - [ ] images, icons, fonts - final linking and filing
+       - [ ] Nice-to-Have: Which features next?
+       - [ ] CSS Animations & Feedback fine tuning
+       
+      
+    - PRESENTATION PREP
+       - [ ] Screenvideo / gif
+       - [ ] Text & Bullets
+       - [ ] final name
+       - [ ] Logo?
+       - [ ] final readme with project description
+
+
+## USER STORIES
+
 
 ```mermaid
 sequenceDiagram
@@ -28,10 +75,10 @@ Sprint #4 ->> Final: ...
 ```
 
 
----
+## MORE
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+© 2023 Nina Saalfrank
 
 
