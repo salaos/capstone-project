@@ -1,13 +1,11 @@
 // home page of the app
 
-import Link from "next/link";
-
 export default function Home() {
   return (
     <main>
-      <Link href="/challenges">
-        <a>my challenges</a>
-      </Link>
+      <h1>
+        <a href="/challenges">My Challenges</a>
+      </h1>
     </main>
   );
 }

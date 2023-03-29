@@ -8,7 +8,7 @@ import NoCard from "../../components/NoCard";
 export default function Challenges() {
   return (
     <main>
-      <h1>my challenges</h1>
+      <h1>My Challenges</h1>
       <CardContainer>
         {challenges.length === 0 ? (
           <NoCard />
