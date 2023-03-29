@@ -1,9 +1,11 @@
-import Heading from "../components/Heading";
+// home page of the app
 
 export default function Home() {
   return (
     <main>
-      <Heading>🐠 Tropical Fish Capstone Template 🐠</Heading>
+      <h1>
+        <a href="/challenges">My Challenges</a>
+      </h1>
     </main>
   );
 }

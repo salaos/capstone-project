@@ -1,3 +1,5 @@
+// root component of the app
+
 import GlobalStyle from "../styles";
 import Head from "next/head";
 
@@ -6,8 +8,9 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Head>
-        <title>Capstone Project</title>
+        <title>SOCIALLY AWESOME</title>
       </Head>
+
       <Component {...pageProps} />
     </>
   );
