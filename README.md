@@ -60,15 +60,15 @@ Sprint #4 ->> Final: ...
 ## PROJECT
 
 __CONCEPT__
- - [ ] Brainstorming
- - [ ] Choose Idea
- - [ ] Fine Conception
- - [ ] Kanban Board
+ - [X] Brainstorming
+ - [X] Choose Idea
+ - [X] Fine Conception
+ - [X] Create Kanban Board
 
 __DESIGN__
- - [ ] Inspiration UI
- - [ ] Structure Sketch
- - [ ] Wireframes 
+ - [X] Inspiration UI
+ - [X] Structure Sketch
+ - [X] First Wireframes 
  - [ ] Prototype
  - [ ] UX Feedback
 
@@ -78,7 +78,7 @@ _SPRINT #1_
  - [ ] Code User Stories 1-3: My-Challenges
  - [ ] Deployment (Vercel)
  - [ ] Create Project Structure
- - [ ] Global CSS
+ - [X] Global CSS
                
 _SPRINT #2_
  - [ ] Code User Stories 4-6: Well-Done, Challenge-of-the-Day, Navigation
