@@ -108,8 +108,7 @@ __PRESENTATION PREP__
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
 This project uses 
-[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load a custom Google Font. 
-[`MaterialUI`](https://mui.com/core/) - a React component library based on Google’s design system.
+[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load a custom Google Font. And [`MaterialUI`](https://mui.com/core/) - a React component library based on Google’s design system.
 
 © 2023 Nina Saalfrank. Template neuefische GmbH.
 
