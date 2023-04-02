@@ -4,12 +4,18 @@ import { challenges } from "../../lib/db";
 import Card from "../../components/Card";
 import CardContainer from "../../components/CardContainer";
 import NoCard from "../../components/NoCard";
+import { StyledButton } from "../../components/StyledComponents";
 
 export default function Challenges() {
   return (
     <main>
       <h1>My Challenges</h1>
+
       <CardContainer>
+        <StyledButton>
+          <a href="/challenges/form">add new Challenge</a>
+        </StyledButton>
+
         {challenges.length === 0 ? (
           <NoCard />
         ) : (
