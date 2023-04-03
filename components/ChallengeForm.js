@@ -1,42 +1,24 @@
+import React, { useState } from "react";
+import styled from "styled-components";
+
 import {
-  StyledBox,
   StyledForm,
   StyledInput,
+  StyledBox,
   StyledRange,
   StyledButton,
-} from "./StyledComponents";
-import { useState } from "react";
+} from "../components/StyledComponents";
 
-export default function ChallengeForm() {
+function ChallengeForm() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [bestcase, setBestcase] = useState("");
-  const [worstcase, setWorstcase] = useState("");
+  const [bestCase, setBestCase] = useState("");
+  const [worstCase, setWorstCase] = useState("");
   const [level, setLevel] = useState(1);
-  const [id, setId] = useState(0);
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const newChallenge = {
-      title,
-      description,
-      bestcase,
-      worstcase,
-      level,
-      id,
-    };
-    console.log(newChallenge);
-    setTitle("");
-    setDescription("");
-    setBestcase("");
-    setWorstcase("");
-    setLevel(1);
-  }
 
   return (
     <>
-      {" "}
-      <StyledForm onSubmit={handleSubmit}>
+      <StyledForm>
         <h1>New Challenge</h1>
 
         <StyledBox>
@@ -49,9 +31,9 @@ export default function ChallengeForm() {
           id="title"
           name="title"
           placeholder="Title"
-          value={title}
-          maxlength="20"
+          maxLength="20"
           required="required"
+          value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
 
@@ -61,8 +43,8 @@ export default function ChallengeForm() {
           id="description"
           name="description"
           placeholder="Description"
+          maxLength="100"
           value={description}
-          maxlength="100"
           onChange={(event) => setDescription(event.target.value)}
         />
 
@@ -72,9 +54,9 @@ export default function ChallengeForm() {
           id="bestcase"
           name="bestcase"
           placeholder="The Best Case"
-          value={bestcase}
-          maxlength="100"
-          onChange={(event) => setBestcase(event.target.value)}
+          maxLength="100"
+          value={bestCase}
+          onChange={(event) => setBestCase(event.target.value)}
         />
 
         <label htmlFor="worstcase" />
@@ -83,14 +65,14 @@ export default function ChallengeForm() {
           id="worstcase"
           name="worstcase"
           placeholder="The Worst Case"
-          value={worstcase}
-          maxlength="100"
-          onChange={(event) => setWorstcase(event.target.value)}
+          maxLength="100"
+          value={worstCase}
+          onChange={(event) => setWorstCase(event.target.value)}
         />
 
         <StyledBox>
           <label htmlFor="level">
-            <p>Difficulty Level {level}</p>
+            <p>Difficulty Level</p>
           </label>
         </StyledBox>
 
@@ -106,8 +88,54 @@ export default function ChallengeForm() {
           onChange={(event) => setLevel(event.target.value)}
         />
 
-        <StyledButton>Add challenge</StyledButton>
+        <StyledButton type="submit">Add challenge</StyledButton>
       </StyledForm>
+
+      <CardContainer>
+        <StyledCard>
+          <h2>{title}</h2>
+        </StyledCard>
+      </CardContainer>
     </>
   );
 }
+
+export default ChallengeForm;
+
+const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem;
+`;
+
+const StyledCard = styled.div`
+  background: var(--cardbackground);
+  border: 3px solid var(--tertiarymid);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin: 0.2rem 0 0.5rem 0;
+  width: 83%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: 10px 8px 0px 0 var(--tertiary);
+  transition: all 0.3s ease-in-out;
+  font-size: 0.8rem;
+  h2 {
+    color: var(--tertiary);
+    opacity: 0.7;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 8px 0px 0 var(--primary);
+    h2 {
+      opacity: 1;
+    }
+  }
+`;

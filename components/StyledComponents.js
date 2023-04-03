@@ -6,9 +6,9 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 3rem 2rem 2rem;
+  margin: 2rem 3rem 2rem 3rem;
   padding: 1rem;
-  border: 2px solid var(--stroke);
+  border: 3px solid var(--tertiarymid);
   border-radius: 20px;
   background: var(--cardbackground);
   box-shadow: 10px 8px 0px 0 var(--tertiary);

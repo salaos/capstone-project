@@ -1,17 +1,27 @@
-// root component of the app
-
-import GlobalStyle from "../styles";
+import { useState } from "react";
+import ChallengeForm from "../components/ChallengeForm";
+import CardContainer from "../components/Challenges";
 import Head from "next/head";
+import GlobalStyle from "../styles";
 
-export default function App({ Component, pageProps }) {
+export default function App() {
+  const [challenges, setChallenges] = useState([]);
+
+  const handleAddChallenge = (newChallenge) => {
+    setChallenges([...challenges, newChallenge]);
+  };
+
   return (
     <>
-      <GlobalStyle />
       <Head>
-        <title>SOCIALLY AWESOME</title>
+        <title>My Challenges</title>
       </Head>
-
-      <Component {...pageProps} />
+      <main>
+        <h1>My Challenges</h1>
+        <GlobalStyle />
+        <ChallengeForm onAddChallenge={handleAddChallenge} />
+        <CardContainer challenges={challenges} />
+      </main>
     </>
   );
 }

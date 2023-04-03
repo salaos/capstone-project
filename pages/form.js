@@ -1,12 +1,13 @@
-import ChallengeForm from "../../components/ChallengeForm";
+import ChallengeForm from "../components/ChallengeForm";
 import Link from "next/link";
+import React from "react";
 
 export default function Home() {
   return (
     <main>
       <ChallengeForm />
       <h3>
-        <Link href="/challenges">Back to challenges</Link>
+        <Link href="..">Back to challenges</Link>
       </h3>
     </main>
   );
