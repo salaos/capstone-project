@@ -1,7 +1,7 @@
 // display all the challenges in a grid format
 
 import styled from "styled-components";
-import { challenges } from "../lib/db";
+import { challenges } from "../pages/api/db";
 import NoCard from "./NoCard";
 import { StyledButton } from "./StyledComponents";
 

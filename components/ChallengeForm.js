@@ -9,16 +9,31 @@ import {
   StyledButton,
 } from "../components/StyledComponents";
 
-function ChallengeForm() {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [bestCase, setBestCase] = useState("");
-  const [worstCase, setWorstCase] = useState("");
-  const [level, setLevel] = useState(1);
+// create a callback function that is called when the form is submitted
+// the callback function should create a new challenge object
+// and call the onAddChallenge function that is passed as a prop
+
+export default function ChallengeForm({ onAddChallenge }) {
+  const [challenge, setChallenge] = useState({
+    title: "",
+    description: "",
+    difficulty: 1,
+  });
+
+  const handleChange = (event) => {
+    const fieldName = event.target.name;
+    const fieldValue = event.target.value;
+    setChallenge({ ...challenge, [fieldName]: fieldValue });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onAddChallenge(challenge);
+  };
 
   return (
     <>
-      <StyledForm>
+      <StyledForm onSubmit={handleSubmit}>
         <h1>New Challenge</h1>
 
         <StyledBox>
@@ -33,8 +48,6 @@ function ChallengeForm() {
           placeholder="Title"
           maxLength="20"
           required="required"
-          value={title}
-          onChange={(event) => setTitle(event.target.value)}
         />
 
         <label htmlFor="description" />
@@ -44,8 +57,6 @@ function ChallengeForm() {
           name="description"
           placeholder="Description"
           maxLength="100"
-          value={description}
-          onChange={(event) => setDescription(event.target.value)}
         />
 
         <label htmlFor="bestcase" />
@@ -55,8 +66,6 @@ function ChallengeForm() {
           name="bestcase"
           placeholder="The Best Case"
           maxLength="100"
-          value={bestCase}
-          onChange={(event) => setBestCase(event.target.value)}
         />
 
         <label htmlFor="worstcase" />
@@ -66,8 +75,6 @@ function ChallengeForm() {
           name="worstcase"
           placeholder="The Worst Case"
           maxLength="100"
-          value={worstCase}
-          onChange={(event) => setWorstCase(event.target.value)}
         />
 
         <StyledBox>
@@ -84,23 +91,13 @@ function ChallengeForm() {
           max="5"
           step="1"
           placeholder="Level"
-          value={level}
-          onChange={(event) => setLevel(event.target.value)}
         />
 
         <StyledButton type="submit">Add challenge</StyledButton>
       </StyledForm>
-
-      <CardContainer>
-        <StyledCard>
-          <h2>{title}</h2>
-        </StyledCard>
-      </CardContainer>
     </>
   );
 }
-
-export default ChallengeForm;
 
 const CardContainer = styled.div`
   display: grid;

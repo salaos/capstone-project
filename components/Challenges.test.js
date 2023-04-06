@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import { challenges } from "../lib/db";
+import { challenges } from "../pages/api/db";
 
 // test("renders a card", () => {
 //   render(<Card challenge={challenges} />);

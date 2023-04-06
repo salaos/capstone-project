@@ -1,5 +1,9 @@
 // This file contains the database of challenges and their descriptions.
 
+export default function database() {
+  localStorage.setItem("challenges", JSON.stringify(challenges));
+}
+
 export const challenges = [
   {
     id: "0",
