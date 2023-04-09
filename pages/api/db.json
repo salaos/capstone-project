@@ -72,7 +72,6 @@
       "worstcase": "You feel intimidated by the event and have difficulty engaging with people. You may feel like you wasted your time, but you can learn from the experience and try again in the future.",
       "realcase": ""
     },
-
     {
       "id": "8",
       "title": "Lead a Group Discussion",
@@ -90,6 +89,42 @@
       "bestcase": "You have a fantastic experience exploring new places and making your own decisions. You feel empowered and independent, and the experience helps build your confidence in navigating new situations.",
       "worstcase": "You may feel anxious or lonely at times, and it may be challenging to navigate unfamiliar surroundings. However, you can learn from the experience and use the skills and confidence you gain to tackle future challenges.",
       "realcase": ""
+    },
+    {
+      "title": "Example",
+      "description": "Example",
+      "difficulty": 2,
+      "bestcase": "",
+      "worstcase": "",
+      "realcase": "",
+      "id": 10
+    },
+    {
+      "title": "Example2",
+      "description": "Example2",
+      "difficulty": 2,
+      "bestcase": "",
+      "worstcase": "",
+      "realcase": "",
+      "id": 11
+    },
+    {
+      "title": "dfkpo",
+      "description": "dofjo",
+      "difficulty": 4,
+      "bestcase": "",
+      "worstcase": "",
+      "realcase": "",
+      "id": 12
+    },
+    {
+      "title": "fjoefj",
+      "description": "",
+      "difficulty": 1,
+      "bestcase": "",
+      "worstcase": "",
+      "realcase": "",
+      "id": 13
     }
   ]
 }

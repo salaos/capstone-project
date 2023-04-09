@@ -1,11 +1,9 @@
 // display all the challenges in a grid format
 
 import styled from "styled-components";
-import { challenges } from "../pages/api/db";
 import NoCard from "./NoCard";
-import { StyledButton } from "./StyledComponents";
 
-export default function Challenges({ challenge }) {
+export default function ChallengeList({ challenges }) {
   return (
     <main>
       <CardContainer>
@@ -57,7 +55,6 @@ const Card = styled.div`
     color: var(--tertiary);
     opacity: 0.7;
   }
-
   &:hover {
     transform: scale(1.03);
     box-shadow: 10px 8px 0px 0 var(--primary);

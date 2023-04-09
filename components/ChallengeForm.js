@@ -13,11 +13,32 @@ import {
 // the callback function should create a new challenge object
 // and call the onAddChallenge function that is passed as a prop
 
+async function persistAddedChallenge(challenge) {
+  const baseUrl = "http://localhost:3000";
+  const resp = await fetch(`${baseUrl}/api/challenges`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(challenge),
+  });
+  if (resp.status < 200 || resp.status > 299) {
+    throw new Error(
+      `Cannot persist challenges, got statusCode: ${resp.status}`
+    );
+  }
+  return await resp.json();
+}
+
 export default function ChallengeForm({ onAddChallenge }) {
   const [challenge, setChallenge] = useState({
     title: "",
     description: "",
     difficulty: 1,
+    bestcase: "",
+    worstcase: "",
+    realcase: "",
   });
 
   const handleChange = (event) => {
@@ -25,10 +46,23 @@ export default function ChallengeForm({ onAddChallenge }) {
     const fieldValue = event.target.value;
     setChallenge({ ...challenge, [fieldName]: fieldValue });
   };
+  const handleChangeNumber = (event) => {
+    const fieldName = event.target.name;
+    const fieldValue = event.target.value;
+    setChallenge({ ...challenge, [fieldName]: Number.parseInt(fieldValue) });
+  };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    onAddChallenge(challenge);
+    const persistedChallenge = await persistAddedChallenge(challenge);
+    onAddChallenge(persistedChallenge);
+
+    // reset form
+    document.getElementById("title").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("bestcase").value = "";
+    document.getElementById("worstcase").value = "";
+    document.getElementById("difficulty").value = 1;
   };
 
   return (
@@ -48,6 +82,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           placeholder="Title"
           maxLength="20"
           required="required"
+          onChange={handleChange}
         />
 
         <label htmlFor="description" />
@@ -57,6 +92,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           name="description"
           placeholder="Description"
           maxLength="100"
+          onChange={handleChange}
         />
 
         <label htmlFor="bestcase" />
@@ -66,6 +102,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           name="bestcase"
           placeholder="The Best Case"
           maxLength="100"
+          onChange={handleChange}
         />
 
         <label htmlFor="worstcase" />
@@ -75,22 +112,25 @@ export default function ChallengeForm({ onAddChallenge }) {
           name="worstcase"
           placeholder="The Worst Case"
           maxLength="100"
+          onChange={handleChange}
         />
 
         <StyledBox>
-          <label htmlFor="level">
-            <p>Difficulty Level</p>
+          <label htmlFor="difficulty">
+            <p>Difficulty Level {challenge.difficulty}</p>
           </label>
         </StyledBox>
 
         <StyledRange
           type="range"
-          name="level"
-          id="level"
+          name="difficulty"
+          id="difficulty"
           min="1"
           max="5"
           step="1"
-          placeholder="Level"
+          placeholder="Difficulty"
+          value={challenge.difficulty}
+          onChange={handleChangeNumber}
         />
 
         <StyledButton type="submit">Add challenge</StyledButton>
@@ -127,7 +167,6 @@ const StyledCard = styled.div`
     color: var(--tertiary);
     opacity: 0.7;
   }
-
   &:hover {
     transform: scale(1.03);
     box-shadow: 10px 8px 0px 0 var(--primary);
