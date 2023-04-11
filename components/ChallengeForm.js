@@ -10,8 +10,7 @@ import {
 } from "../components/StyledComponents";
 
 async function persistAddedChallenge(challenge) {
-  const baseUrl =
-    "https://capstone-project-nina-git-addchallengeform-new-salaos.vercel.app/";
+  const baseUrl = "https://capstone-project-nina-k13ftx2z1-salaos.vercel.app/";
   const resp = await fetch(`${baseUrl}/api/challenges`, {
     method: "POST",
     headers: {
