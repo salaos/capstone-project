@@ -50,13 +50,12 @@ export default function ChallengeForm({ onAddChallenge }) {
     const persistedChallenge = await persistAddedChallenge(challenge);
     onAddChallenge(persistedChallenge);
 
-    setChallenge({
-      title: "",
-      description: "",
-      level: 1,
-      bestcase: "",
-      worstcase: "",
-    });
+    // reset form
+    document.getElementById("title").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("bestcase").value = "";
+    document.getElementById("worstcase").value = "";
+    document.getElementById("level").value = 1;
   };
 
   return (
