@@ -1,7 +1,7 @@
 {
   "challenges": [
     {
-      "id": "0",
+      "id": 0,
       "title": "Start a Conversation",
       "level": 1,
       "description": "Start a conversation with a stranger at a coffee shop or store: For example, asking a barista how their day is going or complimenting someone's outfit.",
@@ -10,7 +10,7 @@
       "realcase": ""
     },
     {
-      "id": "1",
+      "id": 1,
       "title": "Join a group or club",
       "level": 1,
       "description": "Join a local group or club that interests you, such as a book club, hiking group, or art class.",
@@ -19,7 +19,7 @@
       "realcase": ""
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "Attend a social event",
       "level": 2,
       "description": "Attend a social event such as a party, networking event, or dinner with acquaintances.",
@@ -28,7 +28,7 @@
       "realcase": ""
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "Make small talk",
       "level": 2,
       "description": "Strike up a conversation with someone you don't know well and make small talk about their interests, hobbies, or work.",
@@ -37,7 +37,7 @@
       "realcase": ""
     },
     {
-      "id": "4",
+      "id": 4,
       "title": "Express your opinion",
       "level": 3,
       "description": "Express your opinion on a topic during a group discussion or debate.",
@@ -46,7 +46,7 @@
       "realcase": ""
     },
     {
-      "id": "5",
+      "id": 5,
       "title": "Initiate plans with a friend",
       "level": 3,
       "description": "Initiate plans with a friend, such as inviting them to hang out or suggesting a new activity to do together.",
@@ -55,7 +55,7 @@
       "realcase": ""
     },
     {
-      "id": "6",
+      "id": 6,
       "title": "Organize a Social Event",
       "level": 4,
       "description": "Plan and host a social event, such as a small dinner party or game night with friends or acquaintances.",
@@ -64,7 +64,7 @@
       "realcase": ""
     },
     {
-      "id": "7",
+      "id": 7,
       "title": "Attend a Networking Event",
       "level": 5,
       "description": "Attend a networking event or professional conference in your field of interest.",
@@ -73,7 +73,7 @@
       "realcase": ""
     },
     {
-      "id": "8",
+      "id": 8,
       "title": "Lead a Group Discussion",
       "level": 4,
       "description": "Lead a group discussion or presentation on a topic of your choice.",
@@ -82,7 +82,7 @@
       "realcase": ""
     },
     {
-      "id": "9",
+      "id": 9,
       "title": "Travel to a New Place",
       "level": 5,
       "description": "Travel alone to a new place and explore without relying on others for support.",
@@ -98,6 +98,14 @@
       "worstcase": "",
       "realcase": "",
       "id": 10
+    },
+    {
+      "title": "EXAMPLE2",
+      "description": "",
+      "level": 1,
+      "bestcase": "",
+      "worstcase": "",
+      "id": 11
     }
   ]
 }

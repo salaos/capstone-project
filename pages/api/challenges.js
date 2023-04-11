@@ -16,14 +16,7 @@ function validateChallenge(newChallenge) {
   if (
     JSON.stringify(Object.keys(newChallenge).sort()) !==
     JSON.stringify(
-      [
-        "title",
-        "description",
-        "level",
-        "bestcase",
-        "worstcase",
-        "realcase",
-      ].sort()
+      ["title", "description", "level", "bestcase", "worstcase"].sort()
     )
   ) {
     return "Invalid body";
@@ -43,9 +36,7 @@ function validateChallenge(newChallenge) {
   if (newChallenge.worstcase.length > 100) {
     return "Invalid worstcase length";
   }
-  if (newChallenge.realcase.length > 100) {
-    return "Invalid realcase length";
-  }
+
   return null;
 }
 

@@ -10,7 +10,7 @@ import {
 } from "../components/StyledComponents";
 
 async function persistAddedChallenge(challenge) {
-  const baseUrl = "https://capstone-project-nina-k13ftx2z1-salaos.vercel.app/";
+  const baseUrl = "http://localhost:3000";
   const resp = await fetch(`${baseUrl}/api/challenges`, {
     method: "POST",
     headers: {
@@ -20,9 +20,7 @@ async function persistAddedChallenge(challenge) {
     body: JSON.stringify(challenge),
   });
   if (resp.status < 200 || resp.status > 299) {
-    throw new Error(
-      `Cannot persist challenges, got statusCode: ${resp.status}`
-    );
+    throw new Error(`Cannot add challenge, got statusCode: ${resp.status}`);
   }
   return await resp.json();
 }
@@ -34,7 +32,6 @@ export default function ChallengeForm({ onAddChallenge }) {
     level: 1,
     bestcase: "",
     worstcase: "",
-    realcase: "",
   });
 
   const handleChange = (event) => {
@@ -53,12 +50,13 @@ export default function ChallengeForm({ onAddChallenge }) {
     const persistedChallenge = await persistAddedChallenge(challenge);
     onAddChallenge(persistedChallenge);
 
-    // reset form
-    document.getElementById("title").value = "";
-    document.getElementById("description").value = "";
-    document.getElementById("bestcase").value = "";
-    document.getElementById("worstcase").value = "";
-    document.getElementById("level").value = 1;
+    setChallenge({
+      title: "",
+      description: "",
+      level: 1,
+      bestcase: "",
+      worstcase: "",
+    });
   };
 
   return (
@@ -124,7 +122,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           min="1"
           max="5"
           step="1"
-          placeholder="level"
+          placeholder="Level"
           value={challenge.level}
           onChange={handleChangeNumber}
         />
