@@ -10,7 +10,7 @@ import {
 } from "../components/StyledComponents";
 
 async function persistAddedChallenge(challenge) {
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = "http://localhost:3000" || "http://localhost:3001";
   const resp = await fetch(`${baseUrl}/api/challenges`, {
     method: "POST",
     headers: {
