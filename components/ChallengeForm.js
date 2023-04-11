@@ -10,7 +10,7 @@ import {
 } from "../components/StyledComponents";
 
 async function persistAddedChallenge(challenge) {
-  const baseUrl = "http://localhost:3000" || "http://localhost:3001";
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
   const resp = await fetch(`${baseUrl}/api/challenges`, {
     method: "POST",
     headers: {
@@ -19,10 +19,10 @@ async function persistAddedChallenge(challenge) {
     },
     body: JSON.stringify(challenge),
   });
-  if (resp.status < 200 || resp.status > 299) {
-    throw new Error(`Cannot add challenge, got statusCode: ${resp.status}`);
+  if (resp.status > 200 || resp.status < 299) {
+    return await resp.json();
   }
-  return await resp.json();
+  throw new Error(`Cannot add challenge, got statusCode: ${resp.status}`);
 }
 
 export default function ChallengeForm({ onAddChallenge }) {
@@ -56,6 +56,9 @@ export default function ChallengeForm({ onAddChallenge }) {
     document.getElementById("bestcase").value = "";
     document.getElementById("worstcase").value = "";
     document.getElementById("level").value = 1;
+
+    // refresh page
+    window.location.reload();
   };
 
   return (

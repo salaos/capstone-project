@@ -20,7 +20,7 @@ export default function App({ initChallenges }) {
         <h1>My Challenges</h1>
         <GlobalStyle />
         <ChallengeForm onAddChallenge={handleAddChallenge} />
-        <ChallengeList challenges={challenges} />
+        <ChallengeList challenges={challenges.reverse()} />
       </main>
     </>
   );
@@ -28,7 +28,6 @@ export default function App({ initChallenges }) {
 
 App.getInitialProps = async () => {
   const baseUrl = process.env.NEXT_PUBLIC_API_URL;
-
   let initChallenges = [];
   try {
     const resp = await fetch(`${baseUrl}/api/challenges`);
