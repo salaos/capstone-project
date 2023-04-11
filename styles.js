@@ -73,12 +73,12 @@ header {
       font-size: 1.8rem;
   }}
 
-  h3 { font-size: 1.2rem;
-    @media (min-width: 768px) {
-    font-size: 1.4rem;
-  } @media (min-width: 1024px) {
-      font-size: 1.6rem;
-  }}
+  // h3 { font-size: 1.2rem;
+  //   @media (min-width: 768px) {
+  //   font-size: 1.4rem;
+  // } @media (min-width: 1024px) {
+  //     font-size: 1.6rem;
+  // }}
 
   h4 { font-size: 1rem;
     @media (min-width: 768px) {
@@ -119,6 +119,23 @@ header {
     color: var(--tertiary);
     text-decoration: none;
     font-weight: bold;
+  }
+
+
+  h3 {
+    color: var(--tertiary);
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline;
+
+
+      @media (min-width: 768px) {
+        font-size: 0.9rem;
+      }
+  
+      @media (min-width: 1024px) {
+        font-size: 1rem;
+      }
   }
 
 `;

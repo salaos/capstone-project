@@ -17,9 +17,9 @@ export default function App({ initChallenges }) {
         <title>My Challenges</title>
       </Head>
       <main>
-        <h1>My Challenges</h1>
         <GlobalStyle />
         <ChallengeForm onAddChallenge={handleAddChallenge} />
+
         <ChallengeList challenges={challenges.reverse()} />
       </main>
     </>

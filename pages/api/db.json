@@ -90,14 +90,15 @@
       "worstcase": "You may feel anxious or lonely at times, and it may be challenging to navigate unfamiliar surroundings. However, you can learn from the experience and use the skills and confidence you gain to tackle future challenges.",
       "realcase": ""
     },
+
     {
+      "id": 10,
       "title": "Example",
-      "description": "Example",
       "level": 2,
-      "bestcase": "",
-      "worstcase": "",
-      "realcase": "",
-      "id": 10
+      "description": "Attend a social event such as a party, networking event, or dinner with acquaintances.",
+      "bestcase": "You have a great time meeting new people and feel proud of yourself for pushing through any initial nerves.",
+      "worstcase": "You feel a bit uncomfortable or out of place, but you still manage to have some enjoyable conversations and you learn that it's okay to feel a bit awkward at times.",
+      "realcase": ""
     }
   ]
 }
