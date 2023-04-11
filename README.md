@@ -68,39 +68,39 @@ __CONCEPT__
 __DESIGN__
  - [X] Inspiration UI
  - [X] Structure Sketch
- - [X] First Wireframes 
- - [ ] Prototype
- - [ ] UX Feedback
+ - [X] Wireframes 
 
 __CODE__
 
 _SPRINT #1_
- - [ ] Code User Stories 1-3: My-Challenges
- - [ ] Deployment (Vercel)
- - [ ] Create Project Structure
+ - [X] Code User Stories 1: My Challenges
+ - [X] Deployment (Vercel)
+ - [X] Create Project Structure
  - [X] Global CSS
                
 _SPRINT #2_
- - [ ] Code User Stories 4-6: Well-Done, Challenge-of-the-Day, Navigation
+ - [X] Code User Stories 2-3: Add Challenges, API
              
              
 _SPRINT #3_
- - [ ] Code User Stories 7-9: Info-Page, MongoDB?
- - [ ] info-page (Stress techniques & exercise, mental health info)
+ - [ ] Code User Stories 3-5: Detailpage, Change Challenges, Well-Done
+ - [ ] Illustrations for Well-Done page (cute monsters?)
        
 _SPRINT #4_
- - [ ] Code User Stories 9-12: Final Fine Tuning & Illus
+ - [ ] Code User Stories 5-7: Final Fine Tuning & Illus
  - [ ] UX Precision Work
  - [ ] Images, Icons, Fonts, Logo - linking and filing
- - [ ] Illustrations (cute monsters?)
  - [ ] CSS Animations & Feedback
+
        
       
 __PRESENTATION PREP__
+- [ ] UX Feedback
 - [ ] Screenvideo / gif
 - [ ] Description & Bullets
 - [ ] Final readme with project description
 - [ ] Nice-to-Have (Someday): Which features next? -> User Login & Leaderboard
+
 
 ---
 
