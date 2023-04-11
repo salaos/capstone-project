@@ -1,11 +1,6 @@
-// home page of the app
+// page that lists "my challenges"
+import React from "react";
 
-export default function Home() {
-  return (
-    <main>
-      <h1>
-        <a href="/challenges">My Challenges</a>
-      </h1>
-    </main>
-  );
+export default function Challenges() {
+  return <main></main>;
 }
