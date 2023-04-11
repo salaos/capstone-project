@@ -9,12 +9,9 @@ import {
   StyledButton,
 } from "../components/StyledComponents";
 
-// create a callback function that is called when the form is submitted
-// the callback function should create a new challenge object
-// and call the onAddChallenge function that is passed as a prop
-
 async function persistAddedChallenge(challenge) {
-  const baseUrl = "http://localhost:3000";
+  const baseUrl =
+    "https://capstone-project-nina-git-addchallengeform-new-salaos.vercel.app/";
   const resp = await fetch(`${baseUrl}/api/challenges`, {
     method: "POST",
     headers: {
@@ -35,7 +32,7 @@ export default function ChallengeForm({ onAddChallenge }) {
   const [challenge, setChallenge] = useState({
     title: "",
     description: "",
-    difficulty: 1,
+    level: 1,
     bestcase: "",
     worstcase: "",
     realcase: "",
@@ -62,7 +59,7 @@ export default function ChallengeForm({ onAddChallenge }) {
     document.getElementById("description").value = "";
     document.getElementById("bestcase").value = "";
     document.getElementById("worstcase").value = "";
-    document.getElementById("difficulty").value = 1;
+    document.getElementById("level").value = 1;
   };
 
   return (
@@ -116,20 +113,20 @@ export default function ChallengeForm({ onAddChallenge }) {
         />
 
         <StyledBox>
-          <label htmlFor="difficulty">
-            <p>Difficulty Level {challenge.difficulty}</p>
+          <label htmlFor="level">
+            <p>Difficulty Level {challenge.level}</p>
           </label>
         </StyledBox>
 
         <StyledRange
           type="range"
-          name="difficulty"
-          id="difficulty"
+          name="level"
+          id="level"
           min="1"
           max="5"
           step="1"
-          placeholder="Difficulty"
-          value={challenge.difficulty}
+          placeholder="level"
+          value={challenge.level}
           onChange={handleChangeNumber}
         />
 

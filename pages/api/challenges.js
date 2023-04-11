@@ -19,7 +19,7 @@ function validateChallenge(newChallenge) {
       [
         "title",
         "description",
-        "difficulty",
+        "level",
         "bestcase",
         "worstcase",
         "realcase",
@@ -31,8 +31,8 @@ function validateChallenge(newChallenge) {
   if (newChallenge.title.length < 2 || newChallenge.title.length > 100) {
     return "Invalid title length";
   }
-  if (newChallenge.difficulty < 1 || newChallenge.difficulty > 5) {
-    return "Invalid difficulty range";
+  if (newChallenge.level < 1 || newChallenge.level > 5) {
+    return "Invalid level range";
   }
   if (newChallenge.description.length > 100) {
     return "Invalid description length";

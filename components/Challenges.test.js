@@ -1,18 +1,26 @@
 import React from "react";
 import { render } from "@testing-library/react";
+import Card from "./Challenges";
 
-import { challenges } from "../pages/api/db";
+const challenges = [
+  {
+    title: "Start a Conversation",
+    description: "Talk to a stranger",
+    level: 1,
+    bestcase: "You make a new friend",
+    worstcase: "You get rejected",
+    realcase: "You get rejected",
+  },
+];
 
-// test("renders a card", () => {
-//   render(<Card challenge={challenges} />);
+test("renders a card with the correct title", () => {
+  const { getByText } = render(<Card challenges={challenges} />);
+  const title = getByText(/Start a Conversation/i);
+  expect(title).toBeInTheDocument();
+});
 
-//   const card = document.querySelector("div");
-//   expect(card).toBeInTheDocument();
-// });
-
-// test("renders a card with the correct title", () => {
-//   render(<Card challenge={challenges[0]} />);
-
-//   const card = document.querySelector("div");
-//   expect(card).toHaveTextContent("Start a Conversation");
-// });
+test("if there is no challenge, it should render the NoCard component", () => {
+  const { getByText } = render(<Card challenges={[]} />);
+  const noCard = getByText(/Nothing to do/i);
+  expect(noCard).toBeInTheDocument();
+});

@@ -5,23 +5,17 @@ import NoCard from "./NoCard";
 
 export default function ChallengeList({ challenges }) {
   return (
-    <main>
-      <CardContainer>
-        {/* <StyledButton>
-          <a href="/form">add new Challenge</a>
-        </StyledButton> */}
-
-        {challenges.length === 0 ? (
-          <NoCard />
-        ) : (
-          challenges.map((challenge) => (
-            <Card key={challenge.id} challenge={challenge}>
-              <h2>{challenge.title} </h2>
-            </Card>
-          ))
-        )}
-      </CardContainer>
-    </main>
+    <CardContainer>
+      {challenges.length === 0 ? (
+        <NoCard />
+      ) : (
+        challenges.map((challenge) => (
+          <Card key={challenge.id}>
+            <h2>{challenge.title}</h2>
+          </Card>
+        ))
+      )}
+    </CardContainer>
   );
 }
 

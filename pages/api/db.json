@@ -93,38 +93,11 @@
     {
       "title": "Example",
       "description": "Example",
-      "difficulty": 2,
+      "level": 2,
       "bestcase": "",
       "worstcase": "",
       "realcase": "",
       "id": 10
-    },
-    {
-      "title": "Example2",
-      "description": "Example2",
-      "difficulty": 2,
-      "bestcase": "",
-      "worstcase": "",
-      "realcase": "",
-      "id": 11
-    },
-    {
-      "title": "dfkpo",
-      "description": "dofjo",
-      "difficulty": 4,
-      "bestcase": "",
-      "worstcase": "",
-      "realcase": "",
-      "id": 12
-    },
-    {
-      "title": "fjoefj",
-      "description": "",
-      "difficulty": 1,
-      "bestcase": "",
-      "worstcase": "",
-      "realcase": "",
-      "id": 13
     }
   ]
 }
