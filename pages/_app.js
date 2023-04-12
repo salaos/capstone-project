@@ -27,7 +27,7 @@ export default function App({ initChallenges }) {
 }
 
 App.getInitialProps = async () => {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  const baseUrl = process.env.MONGODB_URI;
   let initChallenges = [];
   try {
     const resp = await fetch(`${baseUrl}/api/challenges`);

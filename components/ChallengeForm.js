@@ -10,7 +10,7 @@ import {
 } from "../components/StyledComponents";
 
 async function persistAddedChallenge(challenge) {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  const baseUrl = process.env.MONGODB_URI;
   const resp = await fetch(`${baseUrl}/api/challenges`, {
     method: "POST",
     headers: {
