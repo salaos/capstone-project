@@ -1,44 +1,47 @@
-import { useState } from "react";
-import ChallengeForm from "../components/ChallengeForm";
-import ChallengeList from "../components/Challenges";
-import Head from "next/head";
-import GlobalStyle from "../styles";
+import { useState, useEffect } from "react";
+import ChallengeCard from "./ChallengeCard";
 
-export default function App({ initChallenges }) {
-  const [challenges, setChallenges] = useState(initChallenges);
+function App() {
+  const [challenges, setChallenges] = useState([]);
 
-  const handleAddChallenge = (newChallenge) => {
-    setChallenges([...challenges, newChallenge]);
+  useEffect(() => {
+    fetch("/api/challenges")
+      .then((res) => res.json())
+      .then((data) => setChallenges(data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  const handleCreateChallenge = (challenge) => {
+    fetch("/api/challenges", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(challenge),
+    })
+      .then((res) => res.json())
+      .then((data) => setChallenges([...challenges, data]))
+      .catch((err) => console.log(err));
   };
 
   return (
-    <>
-      <Head>
-        <title>My Challenges</title>
-      </Head>
+    <div className="app">
+      <header>
+        <h1>Challenges</h1>
+      </header>
       <main>
-        <GlobalStyle />
-        <ChallengeForm onAddChallenge={handleAddChallenge} />
-
-        <ChallengeList challenges={challenges.reverse()} />
+        <div className="challenge-list">
+          {challenges.map((challenge) => (
+            <ChallengeCard key={challenge._id} challenge={challenge} />
+          ))}
+        </div>
+        <div className="create-challenge">
+          <h2>Create a Challenge</h2>
+          <ChallengeForm onCreateChallenge={handleCreateChallenge} />
+        </div>
       </main>
-    </>
+    </div>
   );
 }
 
-App.getInitialProps = async () => {
-  const baseUrl = process.env.MONGODB_URI;
-  let initChallenges = [];
-  try {
-    const resp = await fetch(`${baseUrl}/api/challenges`);
-    if (resp.status < 200 || resp.status > 299) {
-      throw new Error(
-        `Cannot fetch challenges, got statusCode: ${resp.status}`
-      );
-    }
-    initChallenges = await resp.json();
-  } catch (e) {
-    console.log(e);
-  }
-  return { initChallenges };
-};
+export default App;
