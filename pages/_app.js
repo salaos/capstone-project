@@ -1,47 +1,32 @@
-import { useState, useEffect } from "react";
-import ChallengeCard from "./ChallengeCard";
+import Head from "next/head";
+import GlobalStyle from "../styles";
+import { initialChallenges } from "../lib/db.js";
+import { useState } from "react";
+import Link from "next/link";
+import styled from "styled-components";
 
-function App() {
-  const [challenges, setChallenges] = useState([]);
+export default function App({ Component, pageProps }) {
+  const [challenges, setChallenges] = useState(initialChallenges);
 
-  useEffect(() => {
-    fetch("/api/challenges")
-      .then((res) => res.json())
-      .then((data) => setChallenges(data))
-      .catch((err) => console.log(err));
-  }, []);
-
-  const handleCreateChallenge = (challenge) => {
-    fetch("/api/challenges", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(challenge),
-    })
-      .then((res) => res.json())
-      .then((data) => setChallenges([...challenges, data]))
-      .catch((err) => console.log(err));
+  const handleAddChallenge = (newChallenge) => {
+    setChallenges([...challenges, newChallenge]);
   };
 
+  // hier deleteChallenge
+
   return (
-    <div className="app">
-      <header>
-        <h1>Challenges</h1>
-      </header>
-      <main>
-        <div className="challenge-list">
-          {challenges.map((challenge) => (
-            <ChallengeCard key={challenge._id} challenge={challenge} />
-          ))}
-        </div>
-        <div className="create-challenge">
-          <h2>Create a Challenge</h2>
-          <ChallengeForm onCreateChallenge={handleCreateChallenge} />
-        </div>
-      </main>
-    </div>
+    <>
+      <Head>
+        <title>My Challenges</title>
+      </Head>
+
+      <GlobalStyle />
+
+      <Component
+        {...pageProps}
+        challenges={challenges}
+        onAddChallenge={handleAddChallenge}
+      />
+    </>
   );
 }
-
-export default App;

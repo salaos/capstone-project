@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
+import { uid } from "uid";
 
 import {
   StyledForm,
@@ -9,22 +11,6 @@ import {
   StyledButton,
 } from "../components/StyledComponents";
 
-async function persistAddedChallenge(challenge) {
-  const baseUrl = process.env.MONGODB_URI;
-  const resp = await fetch(`${baseUrl}/api/challenges`, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(challenge),
-  });
-  if (resp.status > 200 || resp.status < 299) {
-    return await resp.json();
-  }
-  throw new Error(`Cannot add challenge, got statusCode: ${resp.status}`);
-}
-
 export default function ChallengeForm({ onAddChallenge }) {
   const [challenge, setChallenge] = useState({
     title: "",
@@ -33,6 +19,8 @@ export default function ChallengeForm({ onAddChallenge }) {
     bestcase: "",
     worstcase: "",
   });
+
+  const router = useRouter();
 
   const handleChange = (event) => {
     const fieldName = event.target.name;
@@ -45,20 +33,16 @@ export default function ChallengeForm({ onAddChallenge }) {
     setChallenge({ ...challenge, [fieldName]: Number.parseInt(fieldValue) });
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    const persistedChallenge = await persistAddedChallenge(challenge);
-    onAddChallenge(persistedChallenge);
 
-    // reset form
-    document.getElementById("title").value = "";
-    document.getElementById("description").value = "";
-    document.getElementById("bestcase").value = "";
-    document.getElementById("worstcase").value = "";
-    document.getElementById("level").value = 1;
+    const newChallenge = {
+      ...challenge,
+      id: uid(),
+    };
+    onAddChallenge(newChallenge);
 
-    // refresh page
-    window.location.reload();
+    router.push("/");
   };
 
   return (
