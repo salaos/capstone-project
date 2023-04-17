@@ -2,8 +2,6 @@ import Head from "next/head";
 import GlobalStyle from "../styles";
 import { initialChallenges } from "../lib/db.js";
 import { useState } from "react";
-import Link from "next/link";
-import styled from "styled-components";
 
 export default function App({ Component, pageProps }) {
   const [challenges, setChallenges] = useState(initialChallenges);
@@ -12,7 +10,10 @@ export default function App({ Component, pageProps }) {
     setChallenges([...challenges, newChallenge]);
   };
 
-  // hier deleteChallenge
+  const onDelete = (id) => {
+    const newChallenges = challenges.filter((challenge) => challenge.id !== id);
+    setChallenges(newChallenges);
+  };
 
   return (
     <>
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }) {
         {...pageProps}
         challenges={challenges}
         onAddChallenge={handleAddChallenge}
+        onDelete={onDelete}
       />
     </>
   );

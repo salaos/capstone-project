@@ -20,6 +20,10 @@ export default createGlobalStyle`
     --secondarymid: #7ED6E0;
     --tertiary: #994ff3;
     --tertiarymid: #B187F2;
+    --alert: #ff5c8d;
+    --alertmid: #FF8CB4;
+
+
 
   
   }
