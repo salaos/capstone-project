@@ -151,6 +151,44 @@ export const StyledButton = styled.button`
   }
 `;
 
+export const RoundButton = styled.button`
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+
+  align-items: center;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid var(--stroke);
+  border-radius: 500px;
+  background: var(--secondary);
+  box-shadow: 6px 5px 0px 0 var(--secondarymid);
+  transition: all 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &:hover {
+    transform: scale(1.05);
+    background: var(--tertiary);
+    box-shadow: 6px 5px 0px 0 var(--tertiarymid);
+    color: white;
+
+    a {
+      color: var(--primary);
+    }
+  }
+
+  a {
+    color: white;
+    font-size: 2rem;
+  }
+`;
+
 export const StyledBoxWhite = styled.span`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

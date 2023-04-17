@@ -1,44 +1,32 @@
-import { useState } from "react";
-import ChallengeForm from "../components/ChallengeForm";
-import ChallengeList from "../components/Challenges";
 import Head from "next/head";
 import GlobalStyle from "../styles";
+import { initialChallenges } from "../lib/db.js";
+import { useState } from "react";
+import Link from "next/link";
+import styled from "styled-components";
 
-export default function App({ initChallenges }) {
-  const [challenges, setChallenges] = useState(initChallenges);
+export default function App({ Component, pageProps }) {
+  const [challenges, setChallenges] = useState(initialChallenges);
 
   const handleAddChallenge = (newChallenge) => {
     setChallenges([...challenges, newChallenge]);
   };
+
+  // hier deleteChallenge
 
   return (
     <>
       <Head>
         <title>My Challenges</title>
       </Head>
-      <main>
-        <h1>My Challenges</h1>
-        <GlobalStyle />
-        <ChallengeForm onAddChallenge={handleAddChallenge} />
-        <ChallengeList challenges={challenges} />
-      </main>
+
+      <GlobalStyle />
+
+      <Component
+        {...pageProps}
+        challenges={challenges}
+        onAddChallenge={handleAddChallenge}
+      />
     </>
   );
 }
-
-App.getInitialProps = async () => {
-  const baseUrl = "http://localhost:3000";
-  let initChallenges = [];
-  try {
-    const resp = await fetch(`${baseUrl}/api/challenges`);
-    if (resp.status < 200 || resp.status > 299) {
-      throw new Error(
-        `Cannot fetch challenges, got statusCode: ${resp.status}`
-      );
-    }
-    initChallenges = await resp.json();
-  } catch (e) {
-    console.log(e);
-  }
-  return { initChallenges };
-};
