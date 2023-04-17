@@ -178,15 +178,7 @@ export const RoundButton = styled.button`
     box-shadow: 6px 5px 0px 0 var(--tertiarymid);
     color: white;
 
-    a {
-      color: var(--primary);
-    }
-  }
 
-  a {
-    color: white;
-    font-size: 2rem;
-  }
 `;
 
 export const StyledBoxWhite = styled.span`
