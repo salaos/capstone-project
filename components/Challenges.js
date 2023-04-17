@@ -31,21 +31,21 @@ export default function ChallengeList({ challenges }) {
 
             {expandedChallenge === challenge.id && (
               <>
-                <p>
+                <Paragraph>
                   <h3>Level: {challenge.level} </h3>
-                </p>
-                <p>
+                </Paragraph>
+                <Paragraph>
                   <h3>Info: </h3>
                   {challenge.description}
-                </p>
-                <p>
+                </Paragraph>
+                <Paragraph>
                   <h3>Best Case: </h3>
                   {challenge.bestcase}
-                </p>
-                <p>
+                </Paragraph>
+                <Paragraph>
                   <h3>Worst Case: </h3>
                   {challenge.worstcase}
-                </p>
+                </Paragraph>
                 <p>
                   <h3>{challenge.realcase ? "Info: " : ""} </h3>
                   {challenge.realcase}
@@ -58,6 +58,10 @@ export default function ChallengeList({ challenges }) {
     </CardContainer>
   );
 }
+
+const Paragraph = styled.div`
+  margin: 0.8rem 0;
+`;
 
 const CardContainer = styled.div`
   display: grid;
