@@ -1,5 +1,5 @@
 
-## [WWW.SOCIALLYAWESOME.COM](https://capstone-project-git-list-of-challenges-salaos.vercel.app/challenges) (WORKING TITLE)
+## [SOCIALLY AWESOME](https://capstone-project-git-list-of-challenges-salaos.vercel.app/challenges) (WORKING TITLE)
 
 
 
@@ -10,99 +10,22 @@
 
 ## CAPSTONE PROJECT
 
-The social anxiety Web-Application is designed to help individuals overcome their social anxiety by offering a series of challenges that enable them to face their fears and develop new skills. Users can start with simple challenges and progress to more difficult tasks, all of which are intended to help them practice social skills and build confidence in a supportive, non-judgmental environment. However, it's important to keep in mind that every individual's experience with anxiety is unique, and some may require additional support beyond what the app can provide.
+The web application for kids is a platform designed to help children overcome anxiety through fun and engaging challenges. The application's main goal is to teach children how to face their fears and build their self-confidence by taking on different challenges that are tailored to their age and interests.
 
-The Application includes creating own challenges and tracking tools that allow users to monitor their progress and earn rewards for completing challenges and reaching new levels. Additionally, the app provides a way for users to improve their social skills and conquer their fears in a fun and engaging manner.
+Some of the key features of the application include:
 
-__Key features of the social anxiety app include:__
+- Adding new challenges: The application allows for the addition of new challenges to keep things fresh and exciting for the children using it. This means that the children will always have new and different things to work on to overcome their anxiety.
 
-- A series of challenges designed to help users practice social skills and build confidence
-- Every Day a new challenge to get out of the comfort zone
-- Tips for managing symptoms of anxiety (grounding techniques, visualization exercises, deep breathing exercises, mindfulness meditation)
-- Information for professional help (list of local mental health resources, different types of therapy)
-- A supportive, non-judgmental environment to help users overcome social anxiety
-- A fun and engaging way to build confidence and improve social skills.
+- Encouragement: The application provides positive reinforcement and encouragement throughout the challenges to help build the children's confidence and self-esteem.
 
+- Resources for parents: The application also includes resources and tips for parents to help them support their children in their journey to overcome anxiety.
 
-_Nice-to-Have (Maybe someday)_
-
-- Goal-setting and tracking tools to monitor progress on a personal Milestone-Board
-- Providing a platform for a pseudonomised community to share experiences
-- A reward system that is appropriate for the user's age, like...
-           _A leaderboard that allows users to compete with others and track their progress over time
-          - Stickers or badges that are earned for completing challenges or reaching certain milestones
-          - Animated characters or avatars that can be customized as the child progresses through the app
-          - Rewards with real-world value for completing challenges and reaching new levels (coupons or discounts for online stores)
-          - Access to premium features within the app (personalized coaching or support from a mental health professional)_
-
----
-
-## USER STORIES
-
-
-```mermaid
-sequenceDiagram
-Sprint #1 ->> Sprint #2: List of Challenges
-Sprint #1 ->> Sprint #2: Add new Challenges
-Sprint #1 ->> Sprint #2: Change existing Entries
-
-Sprint #2 ->> Sprint #3: ...
-
-
-Sprint #3 ->> Sprint #4: ...
-
-
-Sprint #4 ->> Final: ...
-```
-
----
-
-## PROJECT
-
-__CONCEPT__
- - [X] Brainstorming
- - [X] Choose Idea
- - [X] Fine Conception
- - [X] Create Kanban Board
-
-__DESIGN__
- - [X] Inspiration UI
- - [X] Structure Sketch
- - [X] Wireframes 
-
-__CODE__
-
-_SPRINT #1_
- - [X] Code User Stories 1: My Challenges
- - [X] Deployment (Vercel)
- - [X] Create Project Structure
- - [X] Global CSS
-               
-_SPRINT #2_
- - [X] Code User Stories 2-3: Add Challenges, API
-             
-             
-_SPRINT #3_
- - [ ] Code User Stories 3-5: Detailpage, Change Challenges, Well-Done
- - [ ] Illustrations for Well-Done page (cute monsters?)
-       
-_SPRINT #4_
- - [ ] Code User Stories 5-7: Final Fine Tuning & Illus
- - [ ] UX Precision Work
- - [ ] Images, Icons, Fonts, Logo - linking and filing
- - [ ] CSS Animations & Feedback
-
-       
-      
-__PRESENTATION PREP__
-- [ ] UX Feedback
-- [ ] Screenvideo / gif
-- [ ] Description & Bullets
-- [ ] Final readme with project description
-- [ ] Nice-to-Have (Someday): Which features next? -> User Login & Leaderboard
+Overall, the web application for kids is an innovative and effective tool to help children overcome anxiety by providing them with fun and engaging challenges that build their self-confidence and coping skills.
 
 
 ---
+
+
 
 ## MORE
 
