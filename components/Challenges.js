@@ -3,8 +3,9 @@
 import styled from "styled-components";
 import NoCard from "./NoCard";
 import { useState } from "react";
+import { SmallRoundButton } from "./StyledComponents";
 
-export default function ChallengeList({ challenges }) {
+export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
 
   function toggleExpand(id) {
@@ -15,6 +16,7 @@ export default function ChallengeList({ challenges }) {
     }
   }
 
+  console.log(onDelete);
   return (
     <CardContainer>
       {challenges.length === 0 ? (
@@ -31,6 +33,11 @@ export default function ChallengeList({ challenges }) {
 
             {expandedChallenge === challenge.id && (
               <>
+                <h2>
+                  <SmallRoundButton onClick={() => onDelete(challenge.id)}>
+                    ✖︎
+                  </SmallRoundButton>
+                </h2>
                 <Paragraph>
                   <h3>Level: {challenge.level} </h3>
                 </Paragraph>
@@ -46,10 +53,6 @@ export default function ChallengeList({ challenges }) {
                   <h3>Worst Case: </h3>
                   {challenge.worstcase}
                 </Paragraph>
-                <p>
-                  <h3>{challenge.realcase ? "Info: " : ""} </h3>
-                  {challenge.realcase}
-                </p>
               </>
             )}
           </Card>
@@ -71,8 +74,6 @@ const CardContainer = styled.div`
   align-items: center;
   margin: 1rem;
 `;
-
-// This is a card component that will be used to display the challenges
 
 const Card = styled.div`
 background: var(--cardbackground);

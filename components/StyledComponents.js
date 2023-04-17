@@ -177,8 +177,7 @@ export const RoundButton = styled.button`
     background: var(--tertiary);
     box-shadow: 6px 5px 0px 0 var(--tertiarymid);
     color: white;
-
-
+  }
 `;
 
 export const StyledBoxWhite = styled.span`
@@ -223,4 +222,33 @@ export const StyledBoxWhite = styled.span`
 
   button {  
     margin: 1.5rem;
+`;
+
+export const SmallRoundButton = styled.button`
+  position: fixed;
+  bottom: -2.8rem;
+  right: -2.8rem;
+  display: flex;
+  justify-content: center;
+  width: 0.5rem;
+  height: 0.5rem;
+
+  align-items: center;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid var(--stroke);
+  border-radius: 500px;
+  background: var(--tertiarymid);
+  box-shadow: 6px 5px 0px 0 var(--tertiary);
+  transition: all 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+
+  &:hover {
+    transform: scale(1.05);
+    background: var(--alertmid);
+    box-shadow: 6px 5px 0px 0 var(--alert);
+    color: white;
+  }
 `;
