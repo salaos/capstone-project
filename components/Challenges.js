@@ -55,16 +55,17 @@ export default function ChallengeList({ challenges, onDelete }) {
                   <h3>Level: {challenge.level} </h3>
                 </Paragraph>
                 <Paragraph>
-                  <h3>Info: </h3>
+                  <h3>The Adventure... </h3>
                   {challenge.description}
                 </Paragraph>
+
                 <Paragraph>
-                  <h3>Best Case: </h3>
-                  {challenge.bestcase}
+                  <h3>The Risk... </h3>
+                  {challenge.worstcase}
                 </Paragraph>
                 <Paragraph>
-                  <h3>Worst Case: </h3>
-                  {challenge.worstcase}
+                  <h3>The Price... </h3>
+                  {challenge.bestcase}
                 </Paragraph>
               </>
             )}
