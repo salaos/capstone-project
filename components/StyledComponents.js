@@ -252,3 +252,91 @@ export const SmallRoundButton = styled.button`
     color: white;
   }
 `;
+
+export const Checkbox = styled.input`
+  position: relative;
+  float: right;
+  margin: 0 0.2rem 0.3rem 0;
+  appearance: none;
+
+  ::before {
+    width: 30px;
+    height: 30px;
+    background-color: var(--cardbackground);
+    box-shadow: 4px 4px 0px 0 var(--tertiary);
+    border: 2px solid var(--stroke);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20%;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    z-index: 5;
+    position: relative;
+    pointer-events: none;
+  }
+
+  :checked::before {
+    background-color: var(--tertiarymid);
+    border: 2px solid var(--stroke);
+    transition: all 0.3s ease-in-out;
+  }
+
+  :checked::after {
+    content: "✓";
+    color: var(--cardbackground);
+    font-size: 1.8rem;
+    z-index: 10;
+    position: absolute;
+    top: -3px;
+    left: 4px;
+    right: 0;
+    bottom: 3px;
+    margin: auto;
+  }
+`;
+
+export const Card = styled.div`
+background: var(--cardbackground);
+border: 3px solid var(--tertiarymid);
+border-radius: 20px;
+padding: 1.2rem;
+margin: 0.2rem 0.2rem 0.5rem 0;
+width: 86%;
+height: auto;
+
+align-items: center;
+text-align: left;
+box-shadow: 10px 8px 0px 0 var(--tertiary);
+transition: all 0.3s ease-in-out;
+font-size: 0.8rem;
+h2 {
+  padding: 2px;
+  color: var(--tertiary);
+  opacity: 0.7;
+  text-align: left;
+  display: inline;
+
+}
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 8px 0px 0 var(--primary);
+    h2 {
+      opacity: 1;
+    }
+  }
+}
+`;
+
+export const Paragraph = styled.div`
+  margin: 0.8rem 0;
+`;
+
+export const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem;
+`;
