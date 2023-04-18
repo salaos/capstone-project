@@ -42,7 +42,7 @@ export default function ChallengeList({ challenges, onDelete }) {
               name="done"
               value="done"
               checked={challenge.done}
-            ></Checkbox>
+            />
 
             {expandedChallenge === challenge.id && (
               <>

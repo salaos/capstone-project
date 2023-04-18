@@ -257,10 +257,7 @@ export const Checkbox = styled.input`
   position: relative;
   float: right;
   margin: 0 0.2rem 0.3rem 0;
-
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
   ::before {
     width: 30px;
