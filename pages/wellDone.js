@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import {
-  RoundButton,
   RoundButtonBack,
   StyledContainer,
   ImageContainer,
@@ -12,61 +11,28 @@ import {
   BouncyImage3,
 } from "../components/StyledAnimation";
 
-export default function WellDonePage({ onAddChallenge }) {
+export default function WellDonePage({ challenges }) {
+  // save the ghost attribut for all challenges with done=true
+
+  function showDoneGhosts() {
+    const doneGhosts = [];
+    challenges.map((challenge) => {
+      if (challenge.done === true) {
+        doneGhosts.push(challenge.ghosthappy);
+      }
+    });
+    return doneGhosts;
+  }
+
   return (
     <main>
       <StyledContainer>
         <h1>Well done!</h1>
         <h2>Look at all the ghosts you helped to fight their fear!</h2>
         <ImageContainer>
-          <BouncyImage1
-            src={
-              "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy1.png"
-            }
-            alt="ghosthappy"
-            width={50}
-            height={50}
-          />
-          <BouncyImage2
-            src={
-              "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy2.png"
-            }
-            alt="ghosthappy"
-            width={50}
-            height={50}
-          />
-          <BouncyImage3
-            src={
-              "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy3.png"
-            }
-            alt="ghosthappy"
-            width={50}
-            height={50}
-          />
-          <BouncyImage2
-            src={
-              "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy12.png"
-            }
-            alt="ghosthappy"
-            width={50}
-            height={50}
-          />
-          <BouncyImage3
-            src={
-              "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy6.png"
-            }
-            alt="ghosthappy"
-            width={50}
-            height={50}
-          />
-          <BouncyImage1
-            src={
-              "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy8.png"
-            }
-            alt="ghosthappy"
-            width={50}
-            height={50}
-          />
+          {showDoneGhosts().map((ghosthappy) => (
+            <BouncyImage1 key={ghosthappy} src={ghosthappy} alt="ghosthappy" />
+          ))}
         </ImageContainer>
         <Link href="/" aria-label="back">
           <RoundButtonBack>❮</RoundButtonBack>
