@@ -78,14 +78,7 @@ export default function ChallengeList({ challenges, onDelete }) {
                     ✖︎
                   </SmallRoundButton>
                 </h2>
-                <ImageContainer>
-                  <WanderingImage
-                    src={challenge.ghost}
-                    alt="ghost"
-                    width={70}
-                    height={70}
-                  />
-                </ImageContainer>
+
                 <Paragraph>
                   <h3>Level: {challenge.level} </h3>
                 </Paragraph>
@@ -111,26 +104,3 @@ export default function ChallengeList({ challenges, onDelete }) {
     </CardContainer>
   );
 }
-
-// box-shadow: 10px 8px 0px 0 var(--primary);
-
-const WanderingImage = styled(Image)`
-  animation: 5s linear 0s normal none infinite running ghost;
-  @keyframes ghost {
-    0% {
-      transform: translate(0, 5px);
-    }
-    25% {
-      transform: translate(5px, 10px);
-    }
-    50% {
-      transform: translate(10px, 5px);
-    }
-    75% {
-      transform: translate(-5px, 0px);
-    }
-    100% {
-      transform: translate(0, 5px);
-    }
-  }
-`;
