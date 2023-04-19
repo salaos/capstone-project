@@ -153,8 +153,8 @@ export const StyledButton = styled.button`
 
 export const RoundButton = styled.button`
   position: fixed;
-  top: 0;
-  right: 0;
+  bottom: 0rem;
+  left: -0.7rem;
   display: flex;
   justify-content: center;
   width: 3rem;
@@ -174,8 +174,8 @@ export const RoundButton = styled.button`
 
   &:hover {
     transform: scale(1.05);
-    background: var(--tertiary);
-    box-shadow: 6px 5px 0px 0 var(--tertiarymid);
+    background: var(--secondarymid);
+    box-shadow: 6px 5px 0px 0 var(--secondary);
     color: white;
   }
 `;
@@ -198,9 +198,6 @@ export const StyledBoxWhite = styled.span`
   box-shadow: 10px 8px 0px 0 var(--secondary);
   transition: all 0.3s ease-in-out;
   text-align: center;
-
-  
-
 
 
   h2 {
@@ -257,10 +254,7 @@ export const Checkbox = styled.input`
   position: relative;
   float: right;
   margin: 0 0.2rem 0.3rem 0;
-
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
   ::before {
     width: 30px;
@@ -273,22 +267,23 @@ export const Checkbox = styled.input`
     content: "";
     float: left;
     margin-right: 5px;
-    z-index: 5;
+
     position: relative;
     pointer-events: none;
   }
 
   :checked::before {
-    background-color: var(--tertiarymid);
+    background-color: var(--primarymid);
+    box-shadow: 4px 4px 0px 0 var(--primary);
     border: 2px solid var(--stroke);
     transition: all 0.3s ease-in-out;
   }
 
   :checked::after {
     content: "✓";
-    color: var(--cardbackground);
+    color: white;
     font-size: 1.8rem;
-    z-index: 10;
+
     position: absolute;
     top: -3px;
     left: 4px;
@@ -303,7 +298,7 @@ background: var(--cardbackground);
 border: 3px solid var(--tertiarymid);
 border-radius: 20px;
 padding: 1.2rem;
-margin: 0.2rem 0.2rem 0.5rem 0;
+margin: 0.5rem 0.2rem 0.5rem 0;
 width: 86%;
 height: auto;
 
@@ -323,7 +318,7 @@ h2 {
 
   &:hover {
     transform: scale(1.03);
-    box-shadow: 10px 8px 0px 0 var(--primary);
+ 
     h2 {
       opacity: 1;
     }
@@ -338,8 +333,123 @@ export const Paragraph = styled.div`
 export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 0.6rem;
   justify-items: center;
   align-items: center;
   margin: 1rem;
+`;
+
+export const StyledContainer = styled.div`
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 3rem 2rem 3rem;
+  padding: 1rem;
+  border: 3px solid var(--tertiarymid);
+  border-radius: 20px;
+  background: var(--cardbackground);
+  box-shadow: 10px 8px 0px 0 var(--tertiary);
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: 768px) {
+    margin: 2rem 10rem 0 9rem;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 2rem 15rem 0 14rem;
+  }
+
+  h2 {
+    color: var(--headline);
+  }
+
+  p {
+    text-align: left;
+    width: 70%;
+
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+`;
+
+export const RoundButtonBack = styled.button`
+  position: fixed;
+  bottom: 0;
+  left: -0.7rem;
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  z-index: 20;
+
+  align-items: center;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid var(--stroke);
+  border-radius: 500px;
+  background: var(--tertiary);
+  box-shadow: 6px 5px 0px 0 var(--tertiarymid);
+  transition: all 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &:hover {
+    transform: scale(1.05);
+    background: var(--tertiarymid);
+    box-shadow: 6px 5px 0px 0 var(--tertiary);
+    color: white;
+  }
+`;
+
+export const RoundButtonOverview = styled.button`
+  position: fixed;
+  bottom: 3.8rem;
+  left: -0.7rem;
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  z-index: 20;
+
+  align-items: center;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid var(--stroke);
+  border-radius: 500px;
+  background: var(--primarymid);
+  box-shadow: 6px 5px 0px 0 var(--primary);
+  transition: all 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+  font-size: 2.2rem;
+
+  &:hover {
+    transform: scale(1.05);
+    background: var(--primary);
+    box-shadow: 6px 5px 0px 0 var(--primarymid);
+    color: white;
+  }
+`;
+
+export const ImageContainer = styled.figure`
+  align-items: center;
+  text-align: left;
+
+  img {
+    width: 30%;
+    height: auto;
+    margin: 0.5rem 0.3rem 0.5rem 0;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
 `;

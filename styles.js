@@ -16,6 +16,7 @@ export default createGlobalStyle`
     --stroke: #181818;
     --shadow: #2e2e2e;
     --primary: #fbdd74;
+    --primarymid: #f9c74f;
     --secondary: #4fc4cf;
     --secondarymid: #7ED6E0;
     --tertiary: #994ff3;
