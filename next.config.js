@@ -12,12 +12,6 @@ const nextConfig = {
         hostname: "images.unsplash.com",
         port: "",
       },
-
-      {
-        protocol: "file",
-        hostname: "",
-        port: "",
-      },
     ],
   },
 };
