@@ -253,7 +253,7 @@ export const SmallRoundButton = styled.button`
 export const Checkbox = styled.input`
   position: relative;
   float: right;
-  margin: 0 0.2rem 0.3rem 0;
+  margin: -0.4rem -0.8rem -0.2rem 0;
   appearance: none;
 
   ::before {
@@ -441,7 +441,7 @@ export const RoundButtonOverview = styled.button`
 
 export const ImageContainer = styled.figure`
   align-items: center;
-  text-align: left;
+  text-align: center;
 
   img {
     width: 30%;

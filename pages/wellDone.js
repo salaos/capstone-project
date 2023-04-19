@@ -7,56 +7,55 @@ import {
   ImageContainer,
 } from "../components/StyledComponents";
 import Image from "next/image";
+import styled from "styled-components";
 
 export default function WellDonePage({ onAddChallenge }) {
   return (
     <main>
       <StyledContainer>
         <h1>Well done!</h1>
-        <p>
-          Look at the many tiny ghosts you already have helped to fight their
+        <h2>
+          Look at the many tiny ghosts you've already helped to fight their
           fear!
-        </p>
+        </h2>
         <ImageContainer>
-          <Image
-            src={"/images/img1.png"}
+          <BouncyImage1
+            src={"/images/imghappy1.png"}
             alt="profile pic"
             width={50}
             height={50}
           />
-          <Image
-            src={"/images/img2.png"}
+          <BouncyImage2
+            src={"/images/imghappy2.png"}
             alt="profile pic"
             width={50}
             height={50}
           />
-          <Image
-            src={"/images/img3.png"}
+          <BouncyImage3
+            src={"/images/imghappy3.png"}
             alt="profile pic"
             width={50}
             height={50}
           />
-          <Image
-            src={"/images/img16.png"}
+          <BouncyImage2
+            src={"/images/imghappy16.png"}
             alt="profile pic"
             width={50}
             height={50}
           />
-          <Image
-            src={"/images/img5.png"}
+          <BouncyImage3
+            src={"/images/imghappy5.png"}
             alt="profile pic"
             width={50}
             height={50}
           />
-          <Image
-            src={"/images/img8.png"}
+          <BouncyImage1
+            src={"/images/imghappy8.png"}
             alt="profile pic"
             width={50}
             height={50}
           />
         </ImageContainer>
-        <p>Create a new challenge or go back to your list of challenges.</p>
-
         <Link href="/" aria-label="back">
           <RoundButtonBack>❮</RoundButtonBack>
         </Link>
@@ -64,3 +63,45 @@ export default function WellDonePage({ onAddChallenge }) {
     </main>
   );
 }
+const BouncyImage1 = styled(Image)`
+  animation: bounce 0.3s infinite alternate;
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+
+      opacity: 0.9;
+    }
+  }
+`;
+const BouncyImage2 = styled(Image)`
+  animation: bounce 0.2s infinite alternate;
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+
+      opacity: 0.9;
+    }
+  }
+`;
+const BouncyImage3 = styled(Image)`
+  animation: bounce 0.4s infinite alternate;
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+
+      opacity: 0.9;
+    }
+  }
+`;

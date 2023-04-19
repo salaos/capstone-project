@@ -39,6 +39,7 @@ export default function ChallengeForm({ onAddChallenge }) {
     const newChallenge = {
       ...challenge,
       id: uid(),
+      done: false,
     };
     onAddChallenge(newChallenge);
 

@@ -8,12 +8,14 @@ import {
   Card,
   Paragraph,
   CardContainer,
+  ImageContainer,
 } from "./StyledComponents";
 import Router from "next/router";
+import Image from "next/image";
+import styled from "styled-components";
 
 export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
-  const [isChecked, setIsChecked] = useState(false);
 
   function toggleExpand(id) {
     if (id === expandedChallenge) {
@@ -25,6 +27,7 @@ export default function ChallengeList({ challenges, onDelete }) {
 
   function handleCheck(challenge) {
     if (!challenge.done) {
+      challenge.done = true;
       const gif = document.createElement("img");
       gif.src = "/images/explosion.gif";
       gif.style.position = "fixed";
@@ -38,9 +41,10 @@ export default function ChallengeList({ challenges, onDelete }) {
         document.body.removeChild(gif);
 
         Router.push("/wellDone");
-      }, 2000);
+      }, 1500);
+    } else {
+      challenge.done = false;
     }
-    setIsChecked(!isChecked);
   }
 
   return (
@@ -73,6 +77,14 @@ export default function ChallengeList({ challenges, onDelete }) {
                     ✖︎
                   </SmallRoundButton>
                 </h2>
+                <ImageContainer>
+                  <WanderingImage
+                    src={challenge.ghost}
+                    alt="ghost"
+                    width={70}
+                    height={70}
+                  />
+                </ImageContainer>
                 <Paragraph>
                   <h3>Level: {challenge.level} </h3>
                 </Paragraph>
@@ -100,3 +112,24 @@ export default function ChallengeList({ challenges, onDelete }) {
 }
 
 // box-shadow: 10px 8px 0px 0 var(--primary);
+
+const WanderingImage = styled(Image)`
+  animation: 5s linear 0s normal none infinite running ghost;
+  @keyframes ghost {
+    0% {
+      transform: translate(0, 5px);
+    }
+    25% {
+      transform: translate(5px, 10px);
+    }
+    50% {
+      transform: translate(10px, 5px);
+    }
+    75% {
+      transform: translate(-5px, 0px);
+    }
+    100% {
+      transform: translate(0, 5px);
+    }
+  }
+`;
