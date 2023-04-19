@@ -68,6 +68,7 @@ export default function ChallengeList({ challenges, onDelete }) {
               value="done"
               checked={challenge.done}
               onChange={() => handleCheck(challenge)}
+
             />
 
             {expandedChallenge === challenge.id && (
