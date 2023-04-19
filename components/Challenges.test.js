@@ -9,7 +9,6 @@ const challenges = [
     level: 1,
     bestcase: "You make a new friend",
     worstcase: "You get rejected",
-    realcase: "You get rejected",
   },
 ];
 

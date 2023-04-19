@@ -10,9 +10,8 @@ import {
   CardContainer,
   ImageContainer,
 } from "./StyledComponents";
+import { WanderingImage } from "./StyledAnimation";
 import Router from "next/router";
-import Image from "next/image";
-import styled from "styled-components";
 
 export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
@@ -29,7 +28,8 @@ export default function ChallengeList({ challenges, onDelete }) {
     if (!challenge.done) {
       challenge.done = true;
       const gif = document.createElement("img");
-      gif.src = "/images/explosion.gif";
+      gif.src =
+        "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/explosion.gif";
       gif.style.position = "fixed";
       gif.style.top = "30%";
       gif.style.right = "5%";
@@ -110,26 +110,3 @@ export default function ChallengeList({ challenges, onDelete }) {
     </CardContainer>
   );
 }
-
-// box-shadow: 10px 8px 0px 0 var(--primary);
-
-const WanderingImage = styled.img`
-  animation: 5s linear 0s normal none infinite running ghost;
-  @keyframes ghost {
-    0% {
-      transform: translate(0, 5px);
-    }
-    25% {
-      transform: translate(5px, 10px);
-    }
-    50% {
-      transform: translate(10px, 5px);
-    }
-    75% {
-      transform: translate(-5px, 0px);
-    }
-    100% {
-      transform: translate(0, 5px);
-    }
-  }
-`;

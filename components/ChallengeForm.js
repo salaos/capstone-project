@@ -35,11 +35,14 @@ export default function ChallengeForm({ onAddChallenge }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const ghostNumber = Math.floor(Math.random() * 20) + 1;
 
     const newChallenge = {
       ...challenge,
       id: uid(),
       done: false,
+      ghost: `https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/img${ghostNumber}.png`,
+      ghosthappy: `https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy${ghostNumber}.png`,
     };
     onAddChallenge(newChallenge);
 
@@ -52,7 +55,7 @@ export default function ChallengeForm({ onAddChallenge }) {
         <h1>New Challenge</h1>
 
         <StyledBox>
-          <p>I want to...</p>
+          <p>What's next?</p>
         </StyledBox>
 
         <label htmlFor="title" />
@@ -71,7 +74,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           type="text"
           id="description"
           name="description"
-          placeholder="Description"
+          placeholder="The Adventure ..."
           maxLength="100"
           onChange={handleChange}
         />
@@ -81,7 +84,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           type="text"
           id="bestcase"
           name="bestcase"
-          placeholder="The Best Case"
+          placeholder="The Price ..."
           maxLength="100"
           onChange={handleChange}
         />
@@ -91,7 +94,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           type="text"
           id="worstcase"
           name="worstcase"
-          placeholder="The Worst Case"
+          placeholder="The Risk ..."
           maxLength="100"
           onChange={handleChange}
         />
@@ -114,7 +117,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           onChange={handleChangeNumber}
         />
 
-        <StyledButton type="submit">Add challenge</StyledButton>
+        <StyledButton type="submit">Add Challenge</StyledButton>
       </StyledForm>
     </>
   );
