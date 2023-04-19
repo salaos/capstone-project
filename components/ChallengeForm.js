@@ -55,7 +55,7 @@ export default function ChallengeForm({ onAddChallenge }) {
         <h1>New Challenge</h1>
 
         <StyledBox>
-          <p>What's next?</p>
+          <p>Are you ready?</p>
         </StyledBox>
 
         <label htmlFor="title" />
