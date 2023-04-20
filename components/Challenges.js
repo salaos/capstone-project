@@ -1,5 +1,3 @@
-// display all the challenges in a grid format
-
 import NoCard from "./NoCard";
 import { useState } from "react";
 import {
@@ -15,6 +13,7 @@ import Router from "next/router";
 
 export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
+  const [showPicture, setShowPicture] = useState(false);
 
   function toggleExpand(id) {
     if (id === expandedChallenge) {
@@ -27,23 +26,14 @@ export default function ChallengeList({ challenges, onDelete }) {
   function handleCheck(challenge) {
     if (!challenge.done) {
       challenge.done = true;
-      const gif = document.createElement("img");
-      gif.src =
-        "https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/explosion.gif";
-      gif.style.position = "fixed";
-      gif.style.top = "30%";
-      gif.style.right = "5%";
-      gif.style.width = "80%";
-      gif.style.height = "auto";
+      setShowPicture(true);
 
-      document.body.appendChild(gif);
       setTimeout(() => {
-        document.body.removeChild(gif);
-
         Router.push("/wellDone");
       }, 1500);
     } else {
       challenge.done = false;
+      setShowPicture(false);
     }
   }
 
@@ -77,6 +67,19 @@ export default function ChallengeList({ challenges, onDelete }) {
                     ✖︎
                   </SmallRoundButton>
                 </h2>
+                {showPicture && (
+                  <div>
+                    <img
+                      src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/explosion.gif"
+                      alt="animation"
+                      width="60%"
+                      height="auto"
+                      position="fixed"
+                      align="right"
+                    />
+                  </div>
+                )}
+
                 <ImageContainer>
                   <WanderingImage
                     src={challenge.ghost}
