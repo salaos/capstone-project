@@ -25,6 +25,8 @@ export default createGlobalStyle`
     --alertmid: #FF8CB4;
   }
 
+
+
 header {
   margin: 0;
   font-family: system-ui;
@@ -32,6 +34,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 
 
   body {

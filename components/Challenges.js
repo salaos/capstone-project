@@ -1,13 +1,13 @@
 import NoCard from "./NoCard";
 import { useState } from "react";
 import {
-  SmallRoundButton,
   Checkbox,
   Card,
   Paragraph,
   CardContainer,
   ImageContainer,
 } from "./StyledComponents";
+import { SmallRoundButton } from "./StyledButtons";
 import { WanderingImage } from "./StyledAnimation";
 import Router from "next/router";
 

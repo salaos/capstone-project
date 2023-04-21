@@ -125,61 +125,6 @@ export const StyledBox = styled.div`
   }
 `;
 
-export const StyledButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--stroke);
-  border-radius: 10px;
-  background: var(--secondary);
-  box-shadow: 6px 5px 0px 0 var(--secondarymid);
-  transition: all 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.05);
-    background: var(--tertiary);
-    box-shadow: 6px 5px 0px 0 var(--tertiarymid);
-    color: white;
-  }
-
-  a {
-    color: white;
-  }
-`;
-
-export const RoundButton = styled.button`
-  position: fixed;
-  bottom: 0rem;
-  left: -0.7rem;
-  display: flex;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-
-  align-items: center;
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--stroke);
-  border-radius: 500px;
-  background: var(--secondary);
-  box-shadow: 6px 5px 0px 0 var(--secondarymid);
-  transition: all 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5rem;
-
-  &:hover {
-    transform: scale(1.05);
-    background: var(--secondarymid);
-    box-shadow: 6px 5px 0px 0 var(--secondary);
-    color: white;
-  }
-`;
-
 export const StyledBoxWhite = styled.span`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -219,35 +164,6 @@ export const StyledBoxWhite = styled.span`
 
   button {  
     margin: 1.5rem;
-`;
-
-export const SmallRoundButton = styled.button`
-  position: fixed;
-  bottom: -2.8rem;
-  right: -2.8rem;
-  display: flex;
-  justify-content: center;
-  width: 0.5rem;
-  height: 0.5rem;
-
-  align-items: center;
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--stroke);
-  border-radius: 500px;
-  background: var(--tertiarymid);
-  box-shadow: 6px 5px 0px 0 var(--tertiary);
-  transition: all 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-  font-size: 0.8rem;
-
-  &:hover {
-    transform: scale(1.05);
-    background: var(--alertmid);
-    box-shadow: 6px 5px 0px 0 var(--alert);
-    color: white;
-  }
 `;
 
 export const Checkbox = styled.input`
@@ -366,7 +282,7 @@ export const StyledContainer = styled.div`
   }
 
   p {
-    text-align: left;
+    text-align: center;
     width: 70%;
 
     @media (min-width: 768px) {
@@ -379,63 +295,43 @@ export const StyledContainer = styled.div`
   }
 `;
 
-export const RoundButtonBack = styled.button`
-  position: fixed;
-  bottom: 0;
-  left: -0.7rem;
+export const StyledIntroCard = styled.div`
+  height: 90vh;
   display: flex;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  z-index: 20;
-
+  flex-direction: column;
   align-items: center;
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--stroke);
-  border-radius: 500px;
-  background: var(--tertiary);
-  box-shadow: 6px 5px 0px 0 var(--tertiarymid);
+  justify-content: center;
+  margin: 2rem 3rem 3rem 3rem;
+  padding: 1.1rem;
+  border: 3px solid var(--tertiarymid);
+  border-radius: 20px;
+  background: var(--cardbackground);
+  box-shadow: 10px 8px 0px 0 var(--tertiary);
   transition: all 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5rem;
 
-  &:hover {
-    transform: scale(1.05);
-    background: var(--tertiarymid);
-    box-shadow: 6px 5px 0px 0 var(--tertiary);
-    color: white;
+  @media (min-width: 768px) {
+    margin: 2rem 10rem 0 9rem;
   }
-`;
 
-export const RoundButtonOverview = styled.button`
-  position: fixed;
-  bottom: 3.8rem;
-  left: -0.7rem;
-  display: flex;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  z-index: 20;
+  @media (min-width: 1024px) {
+    margin: 2rem 15rem 0 14rem;
+  }
 
-  align-items: center;
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--stroke);
-  border-radius: 500px;
-  background: var(--primarymid);
-  box-shadow: 6px 5px 0px 0 var(--primary);
-  transition: all 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-  font-size: 2.2rem;
+  h2 {
+    color: var(--headline);
+  }
 
-  &:hover {
-    transform: scale(1.05);
-    background: var(--primary);
-    box-shadow: 6px 5px 0px 0 var(--primarymid);
-    color: white;
+  p {
+    text-align: center;
+    width: 70%;
+
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
   }
 `;
 

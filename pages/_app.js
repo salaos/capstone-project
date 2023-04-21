@@ -11,12 +11,6 @@ export default function App({ Component, pageProps }) {
   };
 
   const onDelete = (id) => {
-    if (confirm("Are you sure you want to delete this challenge?")) {
-      alert("Challenge deleted");
-    } else {
-      return;
-    }
-
     const newChallenges = challenges.filter((challenge) => challenge.id !== id);
     setChallenges(newChallenges);
   };
