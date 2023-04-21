@@ -10,12 +10,12 @@ import Link from "next/link";
 export default function ChallengePage({ challenges, onDelete }) {
   return (
     <main>
-      <h1>My Challenges</h1>
-
       <ChallengeList challenges={challenges} onDelete={onDelete} />
-      <Link href="/" aria-label="bo back to intro">
+
+      <Link href="/" aria-label="back to intro">
         <RoundButtonInfo>i</RoundButtonInfo>
       </Link>
+
       <Link href="/form" aria-label="add new challenge">
         <RoundButton>✚</RoundButton>
       </Link>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const RoundButtonOverview = styled.button`
   position: fixed;
-  bottom: 3.8rem;
+  bottom: 4rem;
   left: -0.7rem;
   display: flex;
   justify-content: center;
@@ -200,10 +200,10 @@ export const StyledButtonIntro = styled.button`
   }
 `;
 
-export const RoundButtonInfo = styled.button`
+export const RoundButton = styled.button`
   position: fixed;
   bottom: 0rem;
-  left: -1.4rem;
+  left: -0.7rem;
   display: flex;
   justify-content: center;
   width: 3rem;
@@ -225,6 +225,35 @@ export const RoundButtonInfo = styled.button`
     transform: scale(1.05);
     background: var(--secondarymid);
     box-shadow: 6px 5px 0px 0 var(--secondary);
+    color: white;
+  }
+`;
+
+export const RoundButtonInfo = styled.button`
+  position: fixed;
+  bottom: 8rem;
+  left: -0.7rem;
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+
+  align-items: center;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid var(--stroke);
+  border-radius: 500px;
+  background: var(--tertiary);
+  box-shadow: 6px 5px 0px 0 var(--tertiarymid);
+  transition: all 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &:hover {
+    transform: scale(1.05);
+    background: var(--tertiarymid);
+    box-shadow: 6px 5px 0px 0 var(--tertiary);
     color: white;
   }
 `;

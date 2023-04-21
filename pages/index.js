@@ -11,7 +11,6 @@ import {
 } from "../components/StyledComponents";
 import styled from "styled-components";
 import Link from "next/link";
-import { WanderingImage } from "../components/StyledAnimation";
 import Router from "next/router";
 
 export default function Intro() {
@@ -55,7 +54,7 @@ export default function Intro() {
         <h1>Hi there!</h1>
         <CenteredCopy>
           Do you ever feel scared or nervous about situations, even if you know
-          it's not really dangerous?{" "}
+          it&apos;s not really dangerous?{" "}
         </CenteredCopy>
 
         <ImageContainer>
@@ -78,10 +77,10 @@ export default function Intro() {
       <AnchorPosition name="intro1"></AnchorPosition>
 
       <StyledIntroCard>
-        <h1>that's okay!</h1>
+        <h1>that&apos;s okay!</h1>
         <CenteredCopy>
-          We all feel it sometimes. It's like having a tiny ghost in our heads
-          that scares us when we are in danger.
+          We all feel it sometimes. It&apos;s like having a tiny ghost in our
+          heads that scares us when we are in danger.
         </CenteredCopy>
         <ImageContainer>
           <AppearingImage
@@ -105,7 +104,7 @@ export default function Intro() {
           ... they are doing their job even in safe situations.
         </CenteredCopy>
         <CenteredCopy>
-          Let's train Shaky Sammy and his friends to get more confident.
+          Let&apos;s train Shaky Sammy and his friends to get more confident.
         </CenteredCopy>
         <ImageContainer>
           <JumpingImage
@@ -161,7 +160,7 @@ export default function Intro() {
           </CenteredCopy>
 
           <Link href="/challengePage" aria-label="add new challenge">
-            <StyledButtonPurple>Let's start!</StyledButtonPurple>
+            <StyledButtonPurple>Let&apos;s start!</StyledButtonPurple>
           </Link>
         </StartAppear>
       </StyledIntroCard>
