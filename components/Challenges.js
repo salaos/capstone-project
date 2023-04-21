@@ -1,5 +1,3 @@
-// display all the challenges in a grid format
-
 import NoCard from "./NoCard";
 import { useState } from "react";
 import {
@@ -8,10 +6,14 @@ import {
   Card,
   Paragraph,
   CardContainer,
+  ImageContainer,
 } from "./StyledComponents";
+import { WanderingImage } from "./StyledAnimation";
+import Router from "next/router";
 
 export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
+  const [showPicture, setShowPicture] = useState(false);
 
   function toggleExpand(id) {
     if (id === expandedChallenge) {
@@ -21,7 +23,20 @@ export default function ChallengeList({ challenges, onDelete }) {
     }
   }
 
-  console.log(onDelete);
+  function handleCheck(challenge) {
+    if (!challenge.done) {
+      challenge.done = true;
+      setShowPicture(true);
+
+      setTimeout(() => {
+        Router.push("/wellDone");
+      }, 1500);
+    } else {
+      challenge.done = false;
+      setShowPicture(false);
+    }
+  }
+
   return (
     <CardContainer>
       {challenges.length === 0 ? (
@@ -42,6 +57,7 @@ export default function ChallengeList({ challenges, onDelete }) {
               name="done"
               value="done"
               checked={challenge.done}
+              onChange={() => handleCheck(challenge)}
             />
 
             {expandedChallenge === challenge.id && (
@@ -51,20 +67,43 @@ export default function ChallengeList({ challenges, onDelete }) {
                     ✖︎
                   </SmallRoundButton>
                 </h2>
+                {showPicture && (
+                  <div>
+                    <img
+                      src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/explosion.gif"
+                      alt="animation"
+                      width="60%"
+                      height="auto"
+                      position="fixed"
+                      align="right"
+                    />
+                  </div>
+                )}
+
+                <ImageContainer>
+                  <WanderingImage
+                    src={challenge.ghost}
+                    alt="ghost"
+                    width={70}
+                    height={70}
+                  />
+                </ImageContainer>
                 <Paragraph>
                   <h3>Level: {challenge.level} </h3>
                 </Paragraph>
+
                 <Paragraph>
-                  <h3>Info: </h3>
+                  <h3>The Adventure... </h3>
                   {challenge.description}
                 </Paragraph>
+
                 <Paragraph>
-                  <h3>Best Case: </h3>
-                  {challenge.bestcase}
+                  <h3>The Risk... </h3>
+                  {challenge.worstcase}
                 </Paragraph>
                 <Paragraph>
-                  <h3>Worst Case: </h3>
-                  {challenge.worstcase}
+                  <h3>The Price... </h3>
+                  {challenge.bestcase}
                 </Paragraph>
               </>
             )}

@@ -16,16 +16,13 @@ export default createGlobalStyle`
     --stroke: #181818;
     --shadow: #2e2e2e;
     --primary: #fbdd74;
+    --primarymid: #f9c74f;
     --secondary: #4fc4cf;
     --secondarymid: #7ED6E0;
     --tertiary: #994ff3;
     --tertiarymid: #B187F2;
     --alert: #ff5c8d;
     --alertmid: #FF8CB4;
-
-
-
-  
   }
 
 header {
@@ -70,18 +67,18 @@ header {
     font-size: 2rem;
   }} 
 
-  h2 { font-size: 1.4rem;
+  h2 { font-size: 1.1rem;
     @media (min-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   } @media (min-width: 1024px) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
   }}
 
-   h3 { font-size: 1.2rem;
+   h3 { font-size: 1.1rem;
      @media (min-width: 768px) {
-     font-size: 1.4rem;
+     font-size: 1.3rem;
    } @media (min-width: 1024px) {
-     font-size: 1.6rem;
+     font-size: 1.5rem;
    }}
 
   h4 { font-size: 1rem;
