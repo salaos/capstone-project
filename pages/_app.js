@@ -2,6 +2,7 @@ import Head from "next/head";
 import GlobalStyle from "../styles";
 import { initialChallenges } from "../lib/db.js";
 import { useState } from "react";
+import Header from "../components/Header";
 
 export default function App({ Component, pageProps }) {
   const [challenges, setChallenges] = useState(initialChallenges);
@@ -11,12 +12,6 @@ export default function App({ Component, pageProps }) {
   };
 
   const onDelete = (id) => {
-    if (confirm("Are you sure you want to delete this challenge?")) {
-      alert("Challenge deleted");
-    } else {
-      return;
-    }
-
     const newChallenges = challenges.filter((challenge) => challenge.id !== id);
     setChallenges(newChallenges);
   };
@@ -26,6 +21,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>My Challenges</title>
       </Head>
+      <Header />
 
       <GlobalStyle />
 

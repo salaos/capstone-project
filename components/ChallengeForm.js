@@ -8,8 +8,8 @@ import {
   StyledInput,
   StyledBox,
   StyledRange,
-  StyledButton,
 } from "../components/StyledComponents";
+import { StyledButtonPurple } from "../components/StyledButtons";
 
 export default function ChallengeForm({ onAddChallenge }) {
   const [challenge, setChallenge] = useState({
@@ -46,7 +46,7 @@ export default function ChallengeForm({ onAddChallenge }) {
     };
     onAddChallenge(newChallenge);
 
-    router.push("/");
+    router.push("/challengePage");
   };
 
   return (
@@ -117,7 +117,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           onChange={handleChangeNumber}
         />
 
-        <StyledButton type="submit">Add Challenge</StyledButton>
+        <StyledButtonPurple type="submit">Add Challenge</StyledButtonPurple>
       </StyledForm>
     </>
   );

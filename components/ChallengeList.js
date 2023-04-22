@@ -70,7 +70,7 @@ export default function ChallengeList({ challenges, onDelete }) {
                 </h2>
                 {showPicture && (
                   <div>
-                    <img
+                    <Image
                       src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/explosion.gif"
                       alt="animation"
                       width="60%"
