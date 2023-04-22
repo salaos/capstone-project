@@ -3,9 +3,10 @@
 
 
 
-![imghappy3](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy3.png")
-    ![imghappy4](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy4.png")
-    ![imghappy5](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy5.png")
+![imghappy2](https://user-images.githubusercontent.com/123561210/233785442-1ddadd1e-04ed-4d80-961f-6f87360fe474.png)
+![imghappy8](https://user-images.githubusercontent.com/123561210/233785449-24963d99-4ec8-4648-b9b9-ebb8067c9ab8.png)
+![imghappy7](https://user-images.githubusercontent.com/123561210/233785455-52b7a151-956f-4ec2-afc6-749b8cecbea8.png)
+
 
 
 ## CAPSTONE PROJECT
