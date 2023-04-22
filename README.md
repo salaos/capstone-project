@@ -18,13 +18,14 @@ Some of the key features of the application include:
 Overall, the web application for kids is an innovative and effective tool to help children overcome anxiety by providing them with fun and engaging challenges that build their self-confidence and coping skills.
 
 
----
+
 
 ![imghappy2](https://user-images.githubusercontent.com/123561210/233785442-1ddadd1e-04ed-4d80-961f-6f87360fe474.png)
 ![imghappy8](https://user-images.githubusercontent.com/123561210/233785449-24963d99-4ec8-4648-b9b9-ebb8067c9ab8.png)
 ![imghappy7](https://user-images.githubusercontent.com/123561210/233785455-52b7a151-956f-4ec2-afc6-749b8cecbea8.png)
 
 
+---
 
 
 
