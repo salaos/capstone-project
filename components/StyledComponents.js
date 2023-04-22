@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 3rem 2rem 3rem;
+  margin: -0.5rem 2.6rem 2rem 2.4rem;
   padding: 1rem;
   border: 3px solid var(--tertiarymid);
   border-radius: 20px;
@@ -252,7 +252,7 @@ export const CardContainer = styled.div`
   grid-gap: 0.6rem;
   justify-items: center;
   align-items: center;
-  margin: 1rem;
+  margin: -1rem 1rem 5.5rem 1rem;
 `;
 
 export const StyledContainer = styled.div`
@@ -261,7 +261,7 @@ export const StyledContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 3rem 2rem 3rem;
+  margin: -0.5rem 2.6rem 2rem 2.4rem;
   padding: 1rem;
   border: 3px solid var(--tertiarymid);
   border-radius: 20px;
@@ -301,7 +301,7 @@ export const StyledIntroCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 3rem 3rem 3rem;
+  margin: 2rem 2.6rem 3rem 2.4rem;
   padding: 1.1rem;
   border: 3px solid var(--tertiarymid);
   border-radius: 20px;
