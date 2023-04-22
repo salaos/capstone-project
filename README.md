@@ -3,12 +3,6 @@
 
 
 
-![imghappy2](https://user-images.githubusercontent.com/123561210/233785442-1ddadd1e-04ed-4d80-961f-6f87360fe474.png)
-![imghappy8](https://user-images.githubusercontent.com/123561210/233785449-24963d99-4ec8-4648-b9b9-ebb8067c9ab8.png)
-![imghappy7](https://user-images.githubusercontent.com/123561210/233785455-52b7a151-956f-4ec2-afc6-749b8cecbea8.png)
-
-
-
 ## CAPSTONE PROJECT
 
 The web application for kids is a platform designed to help children overcome anxiety through fun and engaging challenges. The application's main goal is to teach children how to face their fears and build their self-confidence by taking on different challenges that are tailored to their age and interests.
@@ -25,6 +19,12 @@ Overall, the web application for kids is an innovative and effective tool to hel
 
 
 ---
+
+![imghappy2](https://user-images.githubusercontent.com/123561210/233785442-1ddadd1e-04ed-4d80-961f-6f87360fe474.png)
+![imghappy8](https://user-images.githubusercontent.com/123561210/233785449-24963d99-4ec8-4648-b9b9-ebb8067c9ab8.png)
+![imghappy7](https://user-images.githubusercontent.com/123561210/233785455-52b7a151-956f-4ec2-afc6-749b8cecbea8.png)
+
+
 
 
 
