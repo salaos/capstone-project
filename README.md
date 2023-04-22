@@ -3,9 +3,9 @@
 
 
 
-![img3](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy3.png")
-    ![img4](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy4.png")
-    ![img5](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy5.png")
+![imghappy3](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy3.png")
+    ![imghappy4](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy4.png")
+    ![imghappy5](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy5.png")
 
 
 ## CAPSTONE PROJECT
