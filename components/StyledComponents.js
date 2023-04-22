@@ -252,7 +252,7 @@ export const CardContainer = styled.div`
   grid-gap: 0.6rem;
   justify-items: center;
   align-items: center;
-  margin: -1rem 1rem 0 1rem;
+  margin: -1rem 1rem 5.5rem 1rem;
 `;
 
 export const StyledContainer = styled.div`

@@ -71,7 +71,7 @@ export default function ChallengeForm({ onAddChallenge }) {
           id="title"
           name="title"
           placeholder="Title"
-          maxLength="20"
+          maxLength="23"
           required="required"
           onChange={handleChange}
         />
