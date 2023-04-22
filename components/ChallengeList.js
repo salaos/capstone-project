@@ -10,6 +10,7 @@ import {
 import { SmallRoundButton } from "./StyledButtons";
 import { WanderingImage } from "./StyledAnimation";
 import Router from "next/router";
+import Image from "next/image";
 
 export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
@@ -69,7 +70,7 @@ export default function ChallengeList({ challenges, onDelete }) {
                 </h2>
                 {showPicture && (
                   <div>
-                    <img
+                    <Image
                       src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/explosion.gif"
                       alt="animation"
                       width="60%"

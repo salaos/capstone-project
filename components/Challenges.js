@@ -10,6 +10,7 @@ import {
 import { SmallRoundButton } from "./StyledButtons";
 import { WanderingImage } from "./StyledAnimation";
 import Router from "next/router";
+import Image from "next/image";
 
 export default function ChallengeList({ challenges, onDelete }) {
   const [expandedChallenge, setExpandedChallenge] = useState(null);
