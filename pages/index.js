@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  RoundButtonSkip,
+  RoundButtonBack,
   StyledButtonIntro,
   StyledButtonPurple,
 } from "../components/StyledButtons";
@@ -47,16 +47,25 @@ export default function Intro() {
   return (
     <main>
       <Link href="/challengePage" aria-label="add new challenge">
-        <RoundButtonSkip> &rsaquo;</RoundButtonSkip>
+        <RoundButtonBack>❯</RoundButtonBack>
       </Link>
 
       <StyledIntroCard>
-        <h1>Hi there!</h1>
-        <CenteredCopy>
-          Do you ever feel scared or nervous about situations, even if you know
-          it&apos;s not really dangerous?{" "}
-        </CenteredCopy>
+        <img
+          src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/logo.png"
+          alt="logo"
+          width={100}
+          height="auto"
+        />
 
+        <h1></h1>
+        <CenteredCopy>
+          Hi there! Do you ever feel scared or nervous about situations, even if
+          you know it&apos;s not really dangerous?{" "}
+        </CenteredCopy>
+        <CenteredCopy>
+          Like when talking in front of people. Do you want to ...
+        </CenteredCopy>
         <ImageContainer>
           <DisappearingImage
             src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/img2.png"
@@ -66,9 +75,6 @@ export default function Intro() {
             isVisible={isVisible}
           />
         </ImageContainer>
-        <CenteredCopy>
-          Like when talking in front of people. Do you want to ...
-        </CenteredCopy>
 
         <StyledButtonIntro onClick={disappearOnClick}>
           disappear?

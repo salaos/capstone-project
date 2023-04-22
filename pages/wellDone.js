@@ -20,6 +20,14 @@ export default function WellDonePage({ challenges }) {
 
   return (
     <main>
+      <ImageContainer>
+        <img
+          src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/logo.png"
+          alt="logo"
+          width={100}
+          height="auto"
+        />
+      </ImageContainer>
       <StyledContainer>
         <h1>Well done!</h1>
         <h2>Look at all the ghosts you helped to fight their fear!</h2>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import { uid } from "uid";
+import { ImageContainer } from "../components/StyledComponents";
 
 import {
   StyledForm,
@@ -51,11 +52,17 @@ export default function ChallengeForm({ onAddChallenge }) {
 
   return (
     <>
+      <ImageContainer>
+        <img
+          src="https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/logo.png"
+          alt="logo"
+          width={100}
+          height="auto"
+        />
+      </ImageContainer>
       <StyledForm onSubmit={handleSubmit}>
-        <h1>New Challenge</h1>
-
         <StyledBox>
-          <p>Are you ready?</p>
+          <p>Next Challenge?</p>
         </StyledBox>
 
         <label htmlFor="title" />

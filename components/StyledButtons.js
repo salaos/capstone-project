@@ -142,37 +142,6 @@ export const StyledButtonTeal = styled.button`
   }
 `;
 
-export const RoundButtonSkip = styled.button`
-  position: fixed;
-  bottom: 0rem;
-  right: -0.7rem;
-  display: flex;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  z-index: 20;
-
-  align-items: center;
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--stroke);
-  border-radius: 500px;
-  background: var(--tertiary);
-  box-shadow: 6px 5px 0px 0 var(--tertiarymid);
-  transition: all 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5rem;
-
-  &:hover {
-    transform: scale(1.05);
-    background: var(--tertiarymid);
-    box-shadow: 6px 5px 0px 0 var(--tertiary);
-    color: white;
-  }
-  }
-`;
-
 export const StyledButtonIntro = styled.button`
   display: flex;
   justify-content: center;
