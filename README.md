@@ -3,9 +3,9 @@
 
 
 
-![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
-    ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
-    ![homer](https://user-images.githubusercontent.com/123561210/228357076-a605e16f-e0c6-4508-8e15-f005df9c5136.gif)
+![img3](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy3.png")
+    ![img4](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy4.png")
+    ![img5](https://raw.githubusercontent.com/salaos/capstone-project/main/public/images/imghappy5.png")
 
 
 ## CAPSTONE PROJECT
